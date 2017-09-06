@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\ProjectAndroid\\HospitalQueue\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\logo_main3.png",
+        "source": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\drawable-xhdpi\\logo_main3.png"
+    },
+    {
+        "merged": "E:\\ProjectAndroid\\HospitalQueue\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\employee_login.png",
+        "source": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\drawable-xhdpi\\employee_login.png"
+    }
+]

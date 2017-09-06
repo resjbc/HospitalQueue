@@ -1,0 +1,268 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:2:1-39:12
+	package
+		ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:3:5-37
+		INJECTED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml
+		INJECTED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml
+		INJECTED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml
+		INJECTED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\Idres\.android\build-cache\d582597b7076572422beeb7e84cd9ed640ac4d49\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\Idres\.android\build-cache\1a24c1626f3680c3e112bc10488507c57342ef91\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:5:22-64
+application
+ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:7:5-37:19
+MERGED from [com.android.support:design:25.3.1] C:\Users\Idres\.android\build-cache\383444737c682fd8643e2a2fbc79b0cc423bf6b7\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Idres\.android\build-cache\14c49d3e4111e689eb33c6b45c81ddf6ed3f9559\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Idres\.android\build-cache\2f067f904b3f54b367ace0dcd6fc620cf141c0cf\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Idres\.android\build-cache\9407d61d8faf3ca9ccfe332c365e8aae0cce0ca5\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Idres\.android\build-cache\8d179b0bfda8fb4d2b5b8f3e611141cab6974562\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:gridlayout-v7:25.3.1] C:\Users\Idres\.android\build-cache\5564de7052cdb46bd6480567249a6b20a57adb64\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Idres\.android\build-cache\e3ac5731766f046c1f73c74ef9e219a67b629bdf\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Idres\.android\build-cache\01efd338523c7d74b3be2be55860597235a784c0\output\AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-core:10.0.1] C:\Users\Idres\.android\build-cache\c2fe001c42915403979ba5eee3ee0d39b0d0f396\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\Idres\.android\build-cache\d582597b7076572422beeb7e84cd9ed640ac4d49\output\AndroidManifest.xml:24:5-33:19
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\Idres\.android\build-cache\1a24c1626f3680c3e112bc10488507c57342ef91\output\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:28:5-50:19
+MERGED from [com.google.firebase:firebase-common:10.0.1] C:\Users\Idres\.android\build-cache\0b5f9265a87ed2a0d9aa065ce5cbfd2f4f0514bf\output\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\Idres\.android\build-cache\d08c8cf54b61b83453c5410bb1e0827c747cd168\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\Idres\.android\build-cache\0e6dfd20eb2191f55e2488be602bc3c1cf1da05a\output\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Idres\.android\build-cache\fa90a2efe230c99b2cf8ffc6bd9f2059dfd0d17a\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Idres\.android\build-cache\5ac0cbeae0856a9ec4cdae2f31403f76d9ee4b16\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Idres\.android\build-cache\a779c0ed3ef520bac5171f4f8d5c8cf3d8083540\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Idres\.android\build-cache\d43b5ce548aea9af8807e1324dfb1670079c4b2a\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Idres\.android\build-cache\eedc345fee7817c3517a7db1aae3d093f2e2fa9d\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Idres\.android\build-cache\5438378343531093b028ff829e4ebf9b56d99d4b\output\AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:10:9-41
+	android:supportsRtl
+		ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:12:9-35
+	android:roundIcon
+		ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:11:9-54
+	android:allowBackup
+		ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:8:9-35
+	android:icon
+		ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:9:9-43
+	android:theme
+		ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:14:9-40
+activity#hospital.hospitalqueue.MainActivity
+ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:15:9-24:20
+	android:label
+		ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:17:13-45
+	android:theme
+		ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:18:13-56
+	android:name
+		ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:16:13-41
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:19:13-23:29
+action#android.intent.action.MAIN
+ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:20:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:22:17-77
+	android:name
+		ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:22:27-74
+activity#hospital.hospitalqueue.EmployeeLogin
+ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:25:9-28:59
+	android:label
+		ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:27:13-66
+	android:theme
+		ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:28:13-56
+	android:name
+		ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:26:13-42
+activity#hospital.hospitalqueue.UserVisitDetail
+ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:29:9-32:59
+	android:label
+		ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:31:13-69
+	android:theme
+		ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:32:13-56
+	android:name
+		ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:30:13-44
+activity#hospital.hospitalqueue.ShowQueue
+ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:33:9-36:68
+	android:label
+		ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:35:13-62
+	android:theme
+		ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:36:13-56
+	android:name
+		ADDED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml:34:13-38
+uses-sdk
+INJECTED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:design:25.3.1] C:\Users\Idres\.android\build-cache\383444737c682fd8643e2a2fbc79b0cc423bf6b7\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Idres\.android\build-cache\14c49d3e4111e689eb33c6b45c81ddf6ed3f9559\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Idres\.android\build-cache\2f067f904b3f54b367ace0dcd6fc620cf141c0cf\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Idres\.android\build-cache\9407d61d8faf3ca9ccfe332c365e8aae0cce0ca5\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Idres\.android\build-cache\81345d8fe310527540fc468c9e5446c95eaa8594\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Idres\.android\build-cache\8d179b0bfda8fb4d2b5b8f3e611141cab6974562\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:gridlayout-v7:25.3.1] C:\Users\Idres\.android\build-cache\5564de7052cdb46bd6480567249a6b20a57adb64\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Idres\.android\build-cache\e3ac5731766f046c1f73c74ef9e219a67b629bdf\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Idres\.android\build-cache\01efd338523c7d74b3be2be55860597235a784c0\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database:10.0.1] C:\Users\Idres\.android\build-cache\3f42e5e663eed7e53547c8d74d7fb8ef7fc6ee71\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-database-connection:10.0.1] C:\Users\Idres\.android\build-cache\dfc2221fb96cd8cb6e5e0edd0d376949e76340d8\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-core:10.0.1] C:\Users\Idres\.android\build-cache\c2fe001c42915403979ba5eee3ee0d39b0d0f396\output\AndroidManifest.xml:4:5-42
+MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\Idres\.android\build-cache\d582597b7076572422beeb7e84cd9ed640ac4d49\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\Idres\.android\build-cache\1a24c1626f3680c3e112bc10488507c57342ef91\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-common:10.0.1] C:\Users\Idres\.android\build-cache\0b5f9265a87ed2a0d9aa065ce5cbfd2f4f0514bf\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\Idres\.android\build-cache\d08c8cf54b61b83453c5410bb1e0827c747cd168\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\Idres\.android\build-cache\0e6dfd20eb2191f55e2488be602bc3c1cf1da05a\output\AndroidManifest.xml:17:5-42
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Idres\.android\build-cache\fa90a2efe230c99b2cf8ffc6bd9f2059dfd0d17a\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Idres\.android\build-cache\5ac0cbeae0856a9ec4cdae2f31403f76d9ee4b16\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Idres\.android\build-cache\a779c0ed3ef520bac5171f4f8d5c8cf3d8083540\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Idres\.android\build-cache\d43b5ce548aea9af8807e1324dfb1670079c4b2a\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Idres\.android\build-cache\eedc345fee7817c3517a7db1aae3d093f2e2fa9d\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Idres\.android\build-cache\5438378343531093b028ff829e4ebf9b56d99d4b\output\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Idres\.android\build-cache\383444737c682fd8643e2a2fbc79b0cc423bf6b7\output\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml
+		INJECTED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml
+		INJECTED from E:\ProjectAndroid\HospitalQueue\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] C:\Users\Idres\.android\build-cache\383444737c682fd8643e2a2fbc79b0cc423bf6b7\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Idres\.android\build-cache\14c49d3e4111e689eb33c6b45c81ddf6ed3f9559\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Idres\.android\build-cache\2f067f904b3f54b367ace0dcd6fc620cf141c0cf\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Idres\.android\build-cache\9407d61d8faf3ca9ccfe332c365e8aae0cce0ca5\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Idres\.android\build-cache\81345d8fe310527540fc468c9e5446c95eaa8594\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Idres\.android\build-cache\8d179b0bfda8fb4d2b5b8f3e611141cab6974562\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:gridlayout-v7:25.3.1] C:\Users\Idres\.android\build-cache\5564de7052cdb46bd6480567249a6b20a57adb64\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Idres\.android\build-cache\e3ac5731766f046c1f73c74ef9e219a67b629bdf\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Idres\.android\build-cache\fa90a2efe230c99b2cf8ffc6bd9f2059dfd0d17a\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Idres\.android\build-cache\5ac0cbeae0856a9ec4cdae2f31403f76d9ee4b16\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Idres\.android\build-cache\a779c0ed3ef520bac5171f4f8d5c8cf3d8083540\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Idres\.android\build-cache\d43b5ce548aea9af8807e1324dfb1670079c4b2a\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Idres\.android\build-cache\eedc345fee7817c3517a7db1aae3d093f2e2fa9d\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Idres\.android\build-cache\5438378343531093b028ff829e4ebf9b56d99d4b\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Idres\.android\build-cache\383444737c682fd8643e2a2fbc79b0cc423bf6b7\output\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Idres\.android\build-cache\383444737c682fd8643e2a2fbc79b0cc423bf6b7\output\AndroidManifest.xml:26:9-47
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\Idres\.android\build-cache\d582597b7076572422beeb7e84cd9ed640ac4d49\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\Idres\.android\build-cache\1a24c1626f3680c3e112bc10488507c57342ef91\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\Idres\.android\build-cache\d582597b7076572422beeb7e84cd9ed640ac4d49\output\AndroidManifest.xml:21:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\Idres\.android\build-cache\d582597b7076572422beeb7e84cd9ed640ac4d49\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\Idres\.android\build-cache\1a24c1626f3680c3e112bc10488507c57342ef91\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\Idres\.android\build-cache\d582597b7076572422beeb7e84cd9ed640ac4d49\output\AndroidManifest.xml:22:22-65
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\Idres\.android\build-cache\d582597b7076572422beeb7e84cd9ed640ac4d49\output\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\Idres\.android\build-cache\1a24c1626f3680c3e112bc10488507c57342ef91\output\AndroidManifest.xml:25:7-26:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\Idres\.android\build-cache\d582597b7076572422beeb7e84cd9ed640ac4d49\output\AndroidManifest.xml:25:90-112
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\Idres\.android\build-cache\d582597b7076572422beeb7e84cd9ed640ac4d49\output\AndroidManifest.xml:25:113-137
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\Idres\.android\build-cache\d582597b7076572422beeb7e84cd9ed640ac4d49\output\AndroidManifest.xml:25:17-89
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\Idres\.android\build-cache\d582597b7076572422beeb7e84cd9ed640ac4d49\output\AndroidManifest.xml:27:7-31:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\Idres\.android\build-cache\d582597b7076572422beeb7e84cd9ed640ac4d49\output\AndroidManifest.xml:27:162-184
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\Idres\.android\build-cache\d582597b7076572422beeb7e84cd9ed640ac4d49\output\AndroidManifest.xml:27:105-161
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\Idres\.android\build-cache\d582597b7076572422beeb7e84cd9ed640ac4d49\output\AndroidManifest.xml:27:17-104
+intent-filter#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\Idres\.android\build-cache\d582597b7076572422beeb7e84cd9ed640ac4d49\output\AndroidManifest.xml:28:11-30:27
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\Idres\.android\build-cache\d582597b7076572422beeb7e84cd9ed640ac4d49\output\AndroidManifest.xml:29:15-76
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\Idres\.android\build-cache\d582597b7076572422beeb7e84cd9ed640ac4d49\output\AndroidManifest.xml:29:23-74
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\Idres\.android\build-cache\d582597b7076572422beeb7e84cd9ed640ac4d49\output\AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\Idres\.android\build-cache\1a24c1626f3680c3e112bc10488507c57342ef91\output\AndroidManifest.xml:27:7-137
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\Idres\.android\build-cache\d582597b7076572422beeb7e84cd9ed640ac4d49\output\AndroidManifest.xml:32:88-110
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\Idres\.android\build-cache\d582597b7076572422beeb7e84cd9ed640ac4d49\output\AndroidManifest.xml:32:111-135
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\Idres\.android\build-cache\d582597b7076572422beeb7e84cd9ed640ac4d49\output\AndroidManifest.xml:32:16-87
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:22:22-79
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:24:5-109
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:24:72-107
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:24:17-71
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:26:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:26:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:30:9-36:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:30:85-108
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:30:109-169
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:30:19-84
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:31:13-35:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:32:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:32:25-78
+action#com.google.android.c2dm.intent.REGISTRATION
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:33:17-85
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:33:25-83
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:34:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:34:27-58
+receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:40:9-119
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:40:93-117
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:40:19-92
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:44:9-48:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:44:83-106
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:44:18-82
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:45:13-47:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:45:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:46:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\Idres\.android\build-cache\5ee0cf750c60c42cb1c9631bf3e4a94beca8741a\output\AndroidManifest.xml:46:25-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\Idres\.android\build-cache\0b5f9265a87ed2a0d9aa065ce5cbfd2f4f0514bf\output\AndroidManifest.xml:6:9-194
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\Idres\.android\build-cache\0b5f9265a87ed2a0d9aa065ce5cbfd2f4f0514bf\output\AndroidManifest.xml:6:19-78
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\Idres\.android\build-cache\0b5f9265a87ed2a0d9aa065ce5cbfd2f4f0514bf\output\AndroidManifest.xml:6:144-168
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\Idres\.android\build-cache\0b5f9265a87ed2a0d9aa065ce5cbfd2f4f0514bf\output\AndroidManifest.xml:6:169-192
+	android:name
+		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\Idres\.android\build-cache\0b5f9265a87ed2a0d9aa065ce5cbfd2f4f0514bf\output\AndroidManifest.xml:6:79-143
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\Idres\.android\build-cache\0e6dfd20eb2191f55e2488be602bc3c1cf1da05a\output\AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\Idres\.android\build-cache\0e6dfd20eb2191f55e2488be602bc3c1cf1da05a\output\AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\Idres\.android\build-cache\0e6dfd20eb2191f55e2488be602bc3c1cf1da05a\output\AndroidManifest.xml:20:20-65

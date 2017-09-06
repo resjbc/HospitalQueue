@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00796B</color>
+    <color name="colorPrimaryDark">#004D40</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent2">#FDD835</color>
+    <color name="colorAccent4">#FFEB3B</color>
+    <color name="colorAccent3">#FB8C00</color>
+    <color name="main">#00796B</color>
+    <color name="main2">#1B5E20</color>
+    <color name="black">#000000</color>
+    <color name="brown">#3E2723</color>
+    <color name="white">#ffffff</color>
+    <color name="EmployeeLogin">#e0e0e0</color>
+    <color name="UserVisitDetail">#E0F2F1</color>
+    #
+</resources>

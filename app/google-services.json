@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "955576366198",
+    "firebase_url": "https://hospitalqueue-33a39.firebaseio.com",
+    "project_id": "hospitalqueue-33a39",
+    "storage_bucket": "hospitalqueue-33a39.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955576366198:android:16482e4b7e5bfb26",
+        "android_client_info": {
+          "package_name": "hospital.hospitalqueue"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955576366198-8rndao5prsd2n3jb50p0kvhvj2clc04v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hospital.hospitalqueue",
+            "certificate_hash": "e258a40313fd0ad51187b76695ee064b68c8d1df"
+          }
+        },
+        {
+          "client_id": "955576366198-uc5f6qd3fioa2qjqoghie46d7vrv8sr9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hospital.hospitalqueue",
+            "certificate_hash": "490b7260419f857a83bfa0a771e874d55b1897d6"
+          }
+        },
+        {
+          "client_id": "955576366198-0ejffhokltp0r82k9i7v6u3folbn29bp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDau_-9xV-dD9vrbA1uiIPpwocpGiE1pHk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "955576366198-0ejffhokltp0r82k9i7v6u3folbn29bp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

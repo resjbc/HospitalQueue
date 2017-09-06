@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">955576366198-0ejffhokltp0r82k9i7v6u3folbn29bp.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://hospitalqueue-33a39.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">955576366198</string>
+    <string name="google_api_key" translatable="false">AIzaSyDau_-9xV-dD9vrbA1uiIPpwocpGiE1pHk</string>
+    <string name="google_app_id" translatable="false">1:955576366198:android:16482e4b7e5bfb26</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDau_-9xV-dD9vrbA1uiIPpwocpGiE1pHk</string>
+    <string name="google_storage_bucket" translatable="false">hospitalqueue-33a39.appspot.com</string>
+</resources>

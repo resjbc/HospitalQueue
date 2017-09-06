@@ -1,0 +1,18 @@
+<resources>
+    <dimen name="t_head_logo">30sp</dimen>
+    <dimen name="t_head_logo_login">20sp</dimen>
+    <dimen name="b_user">16sp</dimen>
+    <dimen name="b_employee">16sp</dimen>
+    <dimen name="p_t_b">16dp</dimen>
+    <dimen name="p_r_l">16dp</dimen>
+
+    <dimen name="t_queue_show_number">100sp</dimen>
+    <dimen name="t_queue_show_next_number">40sp</dimen>
+    <dimen name="t_queue_show_all_number">20sp</dimen>
+    <dimen name="t_queue_show_date">14sp</dimen>
+    <dimen name="t_queue_show_datail">16sp</dimen>
+    <dimen name="t_queue_show_dascription">18sp</dimen>
+    <dimen name="t_queue_show_dascription_head">20sp</dimen>
+
+
+</resources>

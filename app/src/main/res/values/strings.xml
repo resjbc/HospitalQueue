@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">HospitalQueue</string>
+    <string name="action_settings">Settings</string>
+    <string name="b_employee">สำหรับเจ้าหน้าที่</string>
+    <string name="b_employee_login">เข้าสู่ระบบ</string>
+    <string name="b_user">จองคิวผู้ป่วย</string>
+    <string name="t_head_logo">ระบบจองคิวโรงพยาบาล</string>
+    <string name="t_employee_login_user">ชื่อผู้ใช้งาน</string>
+    <string name="t_employee_login_pass">รหัสผู้ใช้งาน</string>
+    <string name="title_activity_employee_login">สำหรับเจ้าหน้าที่</string>
+    <string name="b_user_visit_detail_reset">รีเซ็ต</string>
+    <string name="b_user_visit_detail_submit">จองคิว</string>
+    <string name="t_user_visit_detail_sex">เพศ</string>
+    <string name="t_user_visit_detail_name">ชื่อผู้ป่วย</string>
+    <string name="t_user_visit_detail_lastname">นามสกุลผู้ป่วย</string>
+    <string name="t_user_visit_detail_other">ระบุอาการอื่นๆ</string>
+    <string name="r_user_visit_detail_sex_male">ชาย</string>
+    <string name="r_user_visit_detail_sex_female">หญิง</string>
+    <string name="title_activity_user_visit_detail">จองคิวผู้ป่าย</string>
+    <string name="title_activity_show_queue">ShowQueue</string>
+
+    <string name="ra_patient_sex_male">ชาย</string>
+    <string name="ra_patient_sex_female">หญิง</string>
+
+    <string name="t_user_visit_detail">กรอกข้อมูลให้ครบทุกช่อง</string>
+    <string name="st_user_visit_detail">wait</string>
+
+    <string name="firebase_date">Queues</string>
+    <string name="firebase_date_Number">QueuesNumber</string>
+    <string name="firebase_date_child">allQueueNumber</string>
+    <string name="firebase_date_child_present">presentQueueNumber</string>
+    <string name="firebase_date_child_next">nextQueueNumber</string>
+    <string name="firebase_date_child_cancel">CancelQueueNumber</string>
+    <string name="firebase_date_child_patient_status">patient_status</string>
+
+
+    <string name="t_show_queue_description_patient">รายละเอียดคนไข้</string>
+    <string name="t_show_queue_description_next_queue">คิวถัดไป</string>
+    <string name="t_show_queue_description_present_queue">คิวปัจจุบัน</string>
+
+    <string name="t_show_queue_count">จำนวนคิวทั้งหมด</string>
+    <string name="t_show_queue_sex">เพศ</string>
+    <string name="t_show_queue_date">วันที่</string>
+    <string name="t_show_queue_prefix_name">ชื่อ</string>
+    <string name="t_show_queue_t_show_queue_dx">อาการ</string>
+    <string name="t_show_queue_myqueue">หมายเลขคิวของฉัน</string>
+    <string name="t_show_queue_compute_myqueue">จำนวนคิวที่จะถึงเหลืออีก</string>
+    <string name="t_show_queue_compute_myqueue2">คิว</string>
+    <string name="t_show_queue_compute_myqueue3">รอเจ้าหน้าที่เปิดระบบคิว</string>
+    <string name="t_show_queue_compute_myqueue4">ถึงคิวของฉันเเล้ว</string>
+    <string name="t_show_queue_compute_myqueue5">คิวถัดไปเป็นคิวของฉัน</string>
+    <string name="t_show_queue_description">ใช้เวลาพบหมอคิวละ 20 นาที</string>
+
+    <string name="b_show_queue">แก้ไข</string>
+    <string name="b_show_queue_cancel">ยกเลิกคิว</string>
+    <string name="b_show_queue_finish">ปิด</string>
+
+    <string name="t_show_queue_patient_status_success">success</string>
+    <string name="t_show_queue_patient_status_cancel">cancel</string>
+
+    <string name="SavePatientData_key">Patientdata</string>
+
+    <string name="t_showAll">กำลังตรวจสอบข้อมูล</string>
+
+    <string name="t_showAll_zero">...</string>
+
+    <array name="dx">
+        <item>ปวดหัว</item>
+        <item>ปวดท้อง</item>
+        <item>เป็นหวัด</item>
+        <item>ไอ</item>
+        <item>ภูมิเเพ้</item>
+        <item>หายใจไม่ออก</item>
+        <item>หอบ</item>
+        <item>เแน่นหน้าอก</item>
+        <item>อาการอื่นๆ</item>
+    </array>
+</resources>
