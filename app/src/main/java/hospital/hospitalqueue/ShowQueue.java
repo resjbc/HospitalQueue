@@ -229,7 +229,7 @@ public class ShowQueue extends AppCompatActivity implements Patient.OnDataListen
             ClearSuccessAndCancel();
     }
 
-    private void OnLoading(){
+    /*private void OnLoading(){
         t_patient_queue_number.setText(getString(R.string.t_showAll));
         t_patient_queue_present.setText(getString(R.string.t_showAll_zero));
         t_patient_queue_next.setText(getString(R.string.t_showAll_zero));
@@ -237,7 +237,7 @@ public class ShowQueue extends AppCompatActivity implements Patient.OnDataListen
         t_patient_name_lastname.setText(getString(R.string.t_showAll));
         t_patient_sex.setText(getString(R.string.t_showAll));
         t_patient_dx.setText(getString(R.string.t_showAll));
-    }
+    }*/
 }
 
 
