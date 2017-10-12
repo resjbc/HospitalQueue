@@ -8,6 +8,8 @@
     <item name="abc_dialog_min_width_major" type="dimen">55%</item>
     <item name="abc_dialog_min_width_minor" type="dimen">80%</item>
     <dimen name="fab_margin">16dp</dimen>
+    <string name="t_patient_dx">อาการ</string>
+    <string name="t_patient_name">ชื่อ</string>
     <style name="Base.Theme.AppCompat.DialogWhenLarge" parent="Base.Theme.AppCompat.Dialog.FixedSize"/>
     <style name="Base.Theme.AppCompat.Light.DialogWhenLarge" parent="Base.Theme.AppCompat.Light.Dialog.FixedSize"/>
 </resources>

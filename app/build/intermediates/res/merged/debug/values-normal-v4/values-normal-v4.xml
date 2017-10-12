@@ -2,6 +2,7 @@
 <resources>
     <dimen name="b_employee">16sp</dimen>
     <dimen name="b_user">16sp</dimen>
+    <dimen name="p_i_t_b">10dp</dimen>
     <dimen name="p_r_l">16dp</dimen>
     <dimen name="p_t_b">16dp</dimen>
     <dimen name="t_head_logo">30sp</dimen>
@@ -13,4 +14,6 @@
     <dimen name="t_queue_show_date">14sp</dimen>
     <dimen name="t_queue_show_next_number">40sp</dimen>
     <dimen name="t_queue_show_number">100sp</dimen>
+    <string name="t_patient_dx">อาการ</string>
+    <string name="t_patient_name">ชื่อ</string>
 </resources>

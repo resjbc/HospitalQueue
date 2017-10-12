@@ -11,14 +11,7 @@
                     "endOffset": 92
                 },
                 "from": {
-                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\dimens.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 150,
-                        "endColumn": 41,
-                        "endOffset": 187
-                    }
+                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\dimens.xml"
                 }
             },
             {
@@ -30,14 +23,7 @@
                     "endOffset": 130
                 },
                 "from": {
-                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\dimens.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 111,
-                        "endColumn": 37,
-                        "endOffset": 144
-                    }
+                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\dimens.xml"
                 }
             },
             {
@@ -45,8 +31,8 @@
                     "startLine": 4,
                     "startColumn": 4,
                     "startOffset": 135,
-                    "endColumn": 36,
-                    "endOffset": 167
+                    "endColumn": 38,
+                    "endOffset": 169
                 },
                 "from": {
                     "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\dimens.xml",
@@ -54,8 +40,8 @@
                         "startLine": 6,
                         "startColumn": 4,
                         "startOffset": 231,
-                        "endColumn": 36,
-                        "endOffset": 263
+                        "endColumn": 38,
+                        "endOffset": 265
                     }
                 }
             },
@@ -63,189 +49,169 @@
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 172,
+                    "startOffset": 174,
                     "endColumn": 36,
-                    "endOffset": 204
+                    "endOffset": 206
                 },
                 "from": {
-                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\dimens.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 193,
-                        "endColumn": 36,
-                        "endOffset": 225
-                    }
+                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\dimens.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 209,
-                    "endColumn": 42,
-                    "endOffset": 247
+                    "startOffset": 211,
+                    "endColumn": 36,
+                    "endOffset": 243
                 },
                 "from": {
-                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\dimens.xml",
-                    "position": {
-                        "startLine": 1,
-                        "startColumn": 4,
-                        "startOffset": 17,
-                        "endColumn": 42,
-                        "endOffset": 55
-                    }
+                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\dimens.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 252,
-                    "endColumn": 48,
-                    "endOffset": 296
+                    "startOffset": 248,
+                    "endColumn": 42,
+                    "endOffset": 286
                 },
                 "from": {
-                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\dimens.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 61,
-                        "endColumn": 48,
-                        "endOffset": 105
-                    }
+                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\dimens.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 301,
-                    "endColumn": 54,
-                    "endOffset": 351
+                    "startOffset": 291,
+                    "endColumn": 48,
+                    "endOffset": 335
                 },
                 "from": {
-                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\dimens.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 381,
-                        "endColumn": 54,
-                        "endOffset": 431
-                    }
+                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\dimens.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 356,
-                    "endColumn": 55,
-                    "endOffset": 407
+                    "startOffset": 340,
+                    "endColumn": 54,
+                    "endOffset": 390
                 },
                 "from": {
-                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\dimens.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 539,
-                        "endColumn": 55,
-                        "endOffset": 590
-                    }
+                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\dimens.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 412,
-                    "endColumn": 60,
-                    "endOffset": 468
+                    "startOffset": 395,
+                    "endColumn": 55,
+                    "endOffset": 446
                 },
                 "from": {
-                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\dimens.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 596,
-                        "endColumn": 60,
-                        "endOffset": 652
-                    }
+                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\dimens.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 473,
-                    "endColumn": 50,
-                    "endOffset": 519
+                    "startOffset": 451,
+                    "endColumn": 60,
+                    "endOffset": 507
                 },
                 "from": {
-                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\dimens.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 487,
-                        "endColumn": 50,
-                        "endOffset": 533
-                    }
+                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\dimens.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 524,
-                    "endColumn": 48,
-                    "endOffset": 568
+                    "startOffset": 512,
+                    "endColumn": 50,
+                    "endOffset": 558
                 },
                 "from": {
-                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\dimens.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 437,
-                        "endColumn": 48,
-                        "endOffset": 481
-                    }
+                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\dimens.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 573,
-                    "endColumn": 55,
-                    "endOffset": 624
+                    "startOffset": 563,
+                    "endColumn": 48,
+                    "endOffset": 607
                 },
                 "from": {
-                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\dimens.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 324,
-                        "endColumn": 55,
-                        "endOffset": 375
-                    }
+                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\dimens.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 629,
-                    "endColumn": 51,
-                    "endOffset": 676
+                    "startOffset": 612,
+                    "endColumn": 55,
+                    "endOffset": 663
                 },
                 "from": {
-                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\dimens.xml",
+                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\dimens.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 668,
+                    "endColumn": 51,
+                    "endOffset": 715
+                },
+                "from": {
+                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\dimens.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 720,
+                    "endColumn": 46,
+                    "endOffset": 762
+                },
+                "from": {
+                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\strings.xml",
                     "position": {
-                        "startLine": 8,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 271,
-                        "endColumn": 51,
-                        "endOffset": 318
+                        "startOffset": 106,
+                        "endColumn": 46,
+                        "endOffset": 148
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 767,
+                    "endColumn": 47,
+                    "endOffset": 810
+                },
+                "from": {
+                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-normal\\strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 57,
+                        "endColumn": 47,
+                        "endOffset": 100
                     }
                 }
             }

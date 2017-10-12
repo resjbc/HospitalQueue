@@ -53,6 +53,10 @@
             android:name="hospital.hospitalqueue.ShowQueue"
             android:label="@string/title_activity_show_queue"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="hospital.hospitalqueue.EmployeeShowQueue"
+            android:label="@string/title_activity_employee_show_queue"
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"

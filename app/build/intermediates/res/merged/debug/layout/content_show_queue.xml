@@ -44,7 +44,7 @@
         app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
-        android:id="@+id/t_patient_queue_number"
+        android:id="@+id/t_patient_number_item"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorAccent2"
@@ -133,7 +133,7 @@
         android:layout_marginEnd="16dp">
 
         <TextView
-            android:id="@+id/t_patient_name_lastname"
+            android:id="@+id/t_patient_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -176,7 +176,7 @@
         android:orientation="horizontal"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/t_patient_queue_number">
+        app:layout_constraintTop_toBottomOf="@+id/t_patient_number_item">
 
         <LinearLayout
             android:layout_width="match_parent"

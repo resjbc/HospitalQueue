@@ -11,14 +11,7 @@
                     "endOffset": 121
                 },
                 "from": {
-                    "file": "C:\\Users\\Idres\\.android\\build-cache\\14c49d3e4111e689eb33c6b45c81ddf6ed3f9559\\output\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 70,
-                        "endOffset": 121
-                    }
+                    "file": "C:\\Users\\Idres\\.android\\build-cache\\14c49d3e4111e689eb33c6b45c81ddf6ed3f9559\\output\\res\\values-xlarge-v4\\values-xlarge-v4.xml"
                 }
             },
             {
@@ -30,14 +23,7 @@
                     "endOffset": 192
                 },
                 "from": {
-                    "file": "C:\\Users\\Idres\\.android\\build-cache\\14c49d3e4111e689eb33c6b45c81ddf6ed3f9559\\output\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 126,
-                        "endColumn": 70,
-                        "endOffset": 192
-                    }
+                    "file": "C:\\Users\\Idres\\.android\\build-cache\\14c49d3e4111e689eb33c6b45c81ddf6ed3f9559\\output\\res\\values-xlarge-v4\\values-xlarge-v4.xml"
                 }
             },
             {
@@ -49,14 +35,7 @@
                     "endOffset": 262
                 },
                 "from": {
-                    "file": "C:\\Users\\Idres\\.android\\build-cache\\14c49d3e4111e689eb33c6b45c81ddf6ed3f9559\\output\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 197,
-                        "endColumn": 69,
-                        "endOffset": 262
-                    }
+                    "file": "C:\\Users\\Idres\\.android\\build-cache\\14c49d3e4111e689eb33c6b45c81ddf6ed3f9559\\output\\res\\values-xlarge-v4\\values-xlarge-v4.xml"
                 }
             },
             {
@@ -68,14 +47,7 @@
                     "endOffset": 332
                 },
                 "from": {
-                    "file": "C:\\Users\\Idres\\.android\\build-cache\\14c49d3e4111e689eb33c6b45c81ddf6ed3f9559\\output\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 267,
-                        "endColumn": 69,
-                        "endOffset": 332
-                    }
+                    "file": "C:\\Users\\Idres\\.android\\build-cache\\14c49d3e4111e689eb33c6b45c81ddf6ed3f9559\\output\\res\\values-xlarge-v4\\values-xlarge-v4.xml"
                 }
             },
             {
@@ -87,14 +59,7 @@
                     "endOffset": 400
                 },
                 "from": {
-                    "file": "C:\\Users\\Idres\\.android\\build-cache\\14c49d3e4111e689eb33c6b45c81ddf6ed3f9559\\output\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 337,
-                        "endColumn": 67,
-                        "endOffset": 400
-                    }
+                    "file": "C:\\Users\\Idres\\.android\\build-cache\\14c49d3e4111e689eb33c6b45c81ddf6ed3f9559\\output\\res\\values-xlarge-v4\\values-xlarge-v4.xml"
                 }
             },
             {
@@ -106,14 +71,7 @@
                     "endOffset": 468
                 },
                 "from": {
-                    "file": "C:\\Users\\Idres\\.android\\build-cache\\14c49d3e4111e689eb33c6b45c81ddf6ed3f9559\\output\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 405,
-                        "endColumn": 67,
-                        "endOffset": 468
-                    }
+                    "file": "C:\\Users\\Idres\\.android\\build-cache\\14c49d3e4111e689eb33c6b45c81ddf6ed3f9559\\output\\res\\values-xlarge-v4\\values-xlarge-v4.xml"
                 }
             },
             {
@@ -125,13 +83,44 @@
                     "endOffset": 510
                 },
                 "from": {
-                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-xlarge\\dimens.xml",
+                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-xlarge\\dimens.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 515,
+                    "endColumn": 46,
+                    "endOffset": 557
+                },
+                "from": {
+                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-xlarge\\strings.xml",
                     "position": {
-                        "startLine": 1,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 17,
-                        "endColumn": 41,
-                        "endOffset": 54
+                        "startOffset": 106,
+                        "endColumn": 46,
+                        "endOffset": 148
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 562,
+                    "endColumn": 47,
+                    "endOffset": 605
+                },
+                "from": {
+                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-xlarge\\strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 57,
+                        "endColumn": 47,
+                        "endOffset": 100
                     }
                 }
             }

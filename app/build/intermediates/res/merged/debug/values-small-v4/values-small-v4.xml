@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <string name="t_patient_dx">อาการ</string>
+    <string name="t_patient_name">ชื่อ</string>
 </resources>

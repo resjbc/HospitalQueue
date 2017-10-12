@@ -6,7 +6,7 @@
     <string name="b_user">จองคิวผู้ป่วย</string>
     <string name="t_head_logo">ระบบจองคิวโรงพยาบาล</string>
     <string name="t_employee_login_user">ชื่อผู้ใช้งาน</string>
-    <string name="t_employee_login_pass">รหัสผู้ใช้งาน</string>
+    <string name="t_employee_login_pass">รหัสผ่านผู้ใช้งาน</string>
     <string name="title_activity_employee_login">สำหรับเจ้าหน้าที่</string>
     <string name="b_user_visit_detail_reset">รีเซ็ต</string>
     <string name="b_user_visit_detail_submit">จองคิว</string>
@@ -75,4 +75,12 @@
         <item>เแน่นหน้าอก</item>
         <item>อาการอื่นๆ</item>
     </array>
+
+    <string name="ed_user_pass">admin</string>
+
+    <string name="warning_login">ตรวจสอบ ชื่อผู้ใช้งานเเละรหัสผ่านผู้ใช้งาน  </string>
+    <string name="title_activity_employee_show_queue">คิวทั้งหมดวันนี้</string>
+    <string name="t_patient_name">ชื่อ</string>
+    <string name="t_patient_dx">อาการ</string>
+
 </resources>

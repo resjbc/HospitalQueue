@@ -4,13 +4,11 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -51,14 +49,14 @@ public class ShowQueue extends AppCompatActivity implements Patient.OnDataListen
 
         setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        t_patient_name_lastname = (TextView) findViewById(R.id.t_patient_name_lastname);
+        t_patient_name_lastname = (TextView) findViewById(R.id.t_patient_name);
         t_patient_dx = (TextView) findViewById(R.id.t_patient_dx);
         t_patient_queue_present = (TextView) findViewById(R.id.t_patient_queue_present);
         t_patient_queue_next = (TextView) findViewById(R.id.t_patient_queue_next);
         t_patient_queue_description_head = (TextView) findViewById(R.id.t_patient_queue_description_head);
         t_patient_queue_all_queue = (TextView) findViewById(R.id.t_patient_queue_all_queue);
         t_patient_present_date = (TextView) findViewById(R.id.t_patient_present_date);
-        t_patient_queue_number = (TextView) findViewById(R.id.t_patient_queue_number);
+        t_patient_queue_number = (TextView) findViewById(R.id.t_patient_number_item);
         t_patient_compute_queue = (TextView) findViewById(R.id.t_patient_compute_queue);
         t_patient_sex = (TextView) findViewById(R.id.t_patient_sex);
 
