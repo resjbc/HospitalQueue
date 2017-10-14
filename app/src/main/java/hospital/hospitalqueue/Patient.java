@@ -18,6 +18,7 @@ public class Patient  implements Parcelable {
     private String patientQueueNumber;
     private String patient_queue_date;
     private String patient_status;
+    private String patien_call;
 
     private OnDataListener onDataListener = null;
 
@@ -25,7 +26,7 @@ public class Patient  implements Parcelable {
     }
 
 
-    public Patient(String patientName, String patientLastname, String patientId, String patientDx, String patientSex, String patientQueueNumber, String patient_queue_date, String patient_status) {
+    public Patient(String patientName, String patientLastname, String patientId, String patientDx, String patientSex, String patientQueueNumber, String patient_queue_date, String patient_status, String patien_call) {
         this.patientName = patientName;
         this.patientLastname = patientLastname;
         this.patientId = patientId;
@@ -34,6 +35,7 @@ public class Patient  implements Parcelable {
         this.patientQueueNumber = patientQueueNumber;
         this.patient_queue_date = patient_queue_date;
         this.patient_status = patient_status;
+        this.patien_call = patien_call;
     }
 
 
@@ -46,6 +48,7 @@ public class Patient  implements Parcelable {
         patientQueueNumber = in.readString();
         patient_queue_date = in.readString();
         patient_status = in.readString();
+        patien_call = in.readString();
     }
 
     public static final Creator<Patient> CREATOR = new Creator<Patient>() {
@@ -124,7 +127,13 @@ public class Patient  implements Parcelable {
         this.patient_status = patient_status;
     }
 
+    public String getPatien_call() {
+        return patien_call;
+    }
 
+    public void setPatien_call(String patien_call) {
+        this.patien_call = patien_call;
+    }
 
     @Override
     public int describeContents() {
@@ -141,6 +150,7 @@ public class Patient  implements Parcelable {
         parcel.writeString(patientQueueNumber);
         parcel.writeString(patient_queue_date);
         parcel.writeString(patient_status);
+        parcel.writeString(patien_call);
     }
 
     public interface OnDataListener {

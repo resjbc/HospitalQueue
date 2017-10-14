@@ -4,6 +4,9 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -34,6 +37,7 @@ public class ShowQueue extends AppCompatActivity implements Patient.OnDataListen
     DatabaseReference databasePatient;
     DatabaseReference databasePatientQueue;
     ValueEventListener databasePatientQueue_temp;
+    ValueEventListener databasePatient_temp;
 
     SavePatientData savePatientData;
 
@@ -68,6 +72,8 @@ public class ShowQueue extends AppCompatActivity implements Patient.OnDataListen
         databasePatient = FirebaseDatabase.getInstance().getReference(getString(R.string.firebase_date)+"/"+ DateThai.getDate(true));
         databasePatientQueue = FirebaseDatabase.getInstance().getReference(getString(R.string.firebase_date_Number)+"/"+ DateThai.getDate(true));
 
+        //savePatientData.createQueueComing(false);
+
         if(getIntent().getParcelableExtra(KEY) != null) {
             patient = getIntent().getParcelableExtra(KEY);
             patient_id = patient.getPatientId();
@@ -77,19 +83,7 @@ public class ShowQueue extends AppCompatActivity implements Patient.OnDataListen
         }else {
             patient_id = savePatientData.getPatientId();
             //Log.d("ShowQueue",patient_id);
-            databasePatient.child(patient_id).addListenerForSingleValueEvent(new ValueEventListener() {
-                @Override
-                public void onDataChange(DataSnapshot dataSnapshot) {
 
-                    patient = dataSnapshot.getValue(Patient.class);
-                    onPassData();
-                }
-
-                @Override
-                public void onCancelled(DatabaseError databaseError) {
-
-                }
-            });
         }
 
 
@@ -105,12 +99,51 @@ public class ShowQueue extends AppCompatActivity implements Patient.OnDataListen
 
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.setting) {
+            Log.d("Dd","setting");
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 
     @Override
     protected void onStart() {
         super.onStart();
         //OnLoading();
+        Log.d("Dd","onStart");
+
+        databasePatient_temp =  databasePatient.child(patient_id).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+
+                patient = dataSnapshot.getValue(Patient.class);
+                onPassData();
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+
+
         t_patient_present_date.setText(getString(R.string.t_show_queue_date)+" "+DateThai.getDate(true));
 
         databasePatientQueue_temp = databasePatientQueue.addValueEventListener(new ValueEventListener() {
@@ -138,13 +171,15 @@ public class ShowQueue extends AppCompatActivity implements Patient.OnDataListen
 
             queuePresent = dataSnapshot.child(getString(R.string.firebase_date_child_present)).getValue().toString();
             presentQueue = Integer.parseInt(queuePresent);
-            t_patient_queue_present.setText(queuePresent);
+            if(savePatientData.getQueueComing())
+                t_patient_queue_present.setText(patient.getPatientQueueNumber());
+            else t_patient_queue_present.setText(queuePresent);
 
 
             queueNext = dataSnapshot.child(getString(R.string.firebase_date_child_next)).getValue().toString();
             nextQueue = Integer.parseInt(queueNext);
 
-        ShowQueueTextDetail();
+         ShowQueueTextDetail();
 
         queueNumber = dataSnapshot.child(getString(R.string.firebase_date_child)).getValue().toString();
         countQueue = Integer.parseInt(queueNumber);
@@ -156,32 +191,38 @@ public class ShowQueue extends AppCompatActivity implements Patient.OnDataListen
 
     private void ShowQueueTextDetail(){
 
+       if(presentQueue == myQueue)  savePatientData.createQueueComing(true);
 
-        if(presentQueue == myQueue){
+        if(savePatientData.getQueueComing()){
+            Log.d("Dd","ss");
             l_next_queue.setVisibility(View.GONE);
             t_patient_compute_queue.setText(getString(R.string.t_show_queue_compute_myqueue4));
             t_patient_compute_queue.setTextColor(ContextCompat.getColor(ShowQueue.this, R.color.colorAccent4));
             b_cancel_queue.setText(getString(R.string.b_show_queue_finish));
 
         }else if(nextQueue == 0 ) {
+            Log.d("Dd","aa");
             l_next_queue.setVisibility(View.GONE);
             t_patient_compute_queue.setText(getString(R.string.t_show_queue_compute_myqueue3));
             b_cancel_queue.setText(getString(R.string.b_show_queue_cancel));
         }
-        else {
-            l_next_queue.setVisibility(View.VISIBLE);
-            t_patient_queue_next.setText(String.valueOf(nextQueue));
-            b_cancel_queue.setText(getString(R.string.b_show_queue_cancel));
-            if(nextQueue == myQueue) {
-                t_patient_compute_queue.setText(getString(R.string.t_show_queue_compute_myqueue5));
-
-            }
-            else {
-                t_patient_compute_queue.setText(getString(R.string.t_show_queue_compute_myqueue) + " " + (myQueue - nextQueue) + " " + getString(R.string.t_show_queue_compute_myqueue2));
-                t_patient_compute_queue.setTextColor(ContextCompat.getColor(ShowQueue.this, R.color.white));
-            }
-
+        else if (nextQueue == myQueue ) {
+                    t_patient_compute_queue.setText(getString(R.string.t_show_queue_compute_myqueue5));
+                    l_next_queue.setVisibility(View.VISIBLE);
+                    t_patient_queue_next.setText(String.valueOf(nextQueue));
+                    b_cancel_queue.setText(getString(R.string.b_show_queue_cancel));
+                    Log.d("Dd","ww");
+        } else {
+                        t_patient_compute_queue.setText(getString(R.string.t_show_queue_compute_myqueue) + " " + (myQueue - nextQueue) + " " + getString(R.string.t_show_queue_compute_myqueue2));
+                        t_patient_compute_queue.setTextColor(ContextCompat.getColor(ShowQueue.this, R.color.white));
+                        Log.d("Dd", "ff");
+                    l_next_queue.setVisibility(View.VISIBLE);
+                    t_patient_queue_next.setText(String.valueOf(nextQueue));
+                    b_cancel_queue.setText(getString(R.string.b_show_queue_cancel));
         }
+
+
+
     }
 
 
@@ -196,14 +237,16 @@ public class ShowQueue extends AppCompatActivity implements Patient.OnDataListen
 
         databasePatient.child(patient_id).child(getString(R.string.firebase_date_child_patient_status)).setValue(patient_status);
         databasePatientQueue.child(getString(R.string.firebase_date_child_cancel)).setValue(String.valueOf(cancelQueue + 1));
-        databasePatientQueue.removeEventListener(databasePatientQueue_temp);
+        if (databasePatientQueue_temp != null) databasePatientQueue.removeEventListener(databasePatientQueue_temp);
+        if (databasePatient_temp != null) databasePatient.removeEventListener(databasePatient_temp);
         savePatientData.ClearPatientData();
         finish();
     }
 
     private void ClearSuccessAndCancel(){
 
-        databasePatientQueue.removeEventListener(databasePatientQueue_temp);
+        if (databasePatientQueue_temp != null) databasePatientQueue.removeEventListener(databasePatientQueue_temp);
+        if (databasePatient_temp != null) databasePatient.removeEventListener(databasePatient_temp);
         savePatientData.ClearPatientData();
         finish();
     }
@@ -235,6 +278,22 @@ public class ShowQueue extends AppCompatActivity implements Patient.OnDataListen
         t_patient_name_lastname.setText(getString(R.string.t_showAll));
         t_patient_sex.setText(getString(R.string.t_showAll));
         t_patient_dx.setText(getString(R.string.t_showAll));
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        ClearSuccessAndCancel();
+    }
+
+    @Override
+    protected void onResume() {
+        Log.d("Dd","onResume");
+       try {
+           if(patient.getPatient_status().equals(getString(R.string.t_show_queue_patient_status_cancel)) || patient.getPatient_status().equals(getString(R.string.t_show_queue_patient_status_success)))
+               ClearSuccessAndCancel();
+       }catch (Exception e){}
+        super.onResume();
     }
 }
 

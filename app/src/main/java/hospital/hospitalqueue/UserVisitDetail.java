@@ -161,11 +161,12 @@ public class UserVisitDetail extends AppCompatActivity {
         String patient_queue_date = DateThai.getDate(false);
         String queueNumber = String.valueOf(this.queueNumber+1);
         String patient_status = getString(R.string.st_user_visit_detail);
+        String patien_call = getString(R.string.patien_call);
 
         if(!TextUtils.isEmpty(patientName) && !TextUtils.isEmpty(patientLastNmae) && !TextUtils.isEmpty(patientDx) && ra_group_patient_sex.getCheckedRadioButtonId() != -1 && !TextUtils.isEmpty(patientDx)){
 
             String patientId = databasePatient.push().getKey();
-            Patient patient = new Patient(patientName,patientLastNmae,patientId,patientDx,patientSex,queueNumber,patient_queue_date,patient_status);
+            Patient patient = new Patient(patientName,patientLastNmae,patientId,patientDx,patientSex,queueNumber,patient_queue_date,patient_status,patien_call);
 
             databasePatient.child(patientId).setValue(patient);
             databasePatientQueue.child(getString(R.string.firebase_date_child)).setValue(queueNumber);

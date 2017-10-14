@@ -40,6 +40,44 @@ public class SavePatientData {
         return sharedPerfs.getString("DateVisitPatient", "0");
     }
 
+    public void createQueueComing(boolean flagQueueComing) {
+        editor.putBoolean("QueueComing", flagQueueComing);
+        editor.commit();
+    }
+
+    public boolean getQueueComing() {
+        return sharedPerfs.getBoolean("QueueComing",false);
+    }
+
+    public void createSetting_Sound(boolean sound) {
+        editor.putBoolean("Sound", sound);
+        editor.commit();
+    }
+
+    public boolean getSetting_Sound() {
+        return sharedPerfs.getBoolean("Sound",true);
+    }
+
+    public void createSetting_Vibrator(boolean vibrator) {
+        editor.putBoolean("Vibrator", vibrator);
+        editor.commit();
+    }
+
+    public boolean getSetting_Vibrator() {
+        return sharedPerfs.getBoolean("Vibrator",true);
+    }
+
+    public void createSetting_Notify(boolean notify) {
+        editor.putBoolean("Notify", notify);
+        editor.commit();
+    }
+
+    public boolean getSetting_Notifyr() {
+        return sharedPerfs.getBoolean("Notify",true);
+    }
+
+
+
     public void ClearPatientData(){
         editor.clear().commit();
     }

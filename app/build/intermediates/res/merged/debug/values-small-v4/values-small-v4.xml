@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <string name="d_quation_delete">ต้องการลบคิวใช่หรือไม่</string>
+    <string name="d_quation_delete_button_no">ไม่</string>
+    <string name="d_quation_delete_button_ok">ใช่</string>
+    <string name="firebase_date_child_allQueueNumber">allQueueNumber</string>
+    <string name="firebase_key">patient_status</string>
+    <string name="patien_call">done</string>
+    <string name="t_call_patient">เเจ้งเตือนผู้ป่วย</string>
+    <string name="t_end_queue">คิวสุดท้ายของวันนี้</string>
+    <string name="t_end_queue2">ไม่พบคิว</string>
+    <string name="t_option_menu">การจัดการ</string>
     <string name="t_patient_dx">อาการ</string>
     <string name="t_patient_name">ชื่อ</string>
+    <string name="t_queue">คิวที่</string>
+    <string name="t_show_f_call">เเจ้งเตือนผู้ป่วย</string>
+    <string name="t_status">สถานะ</string>
 </resources>

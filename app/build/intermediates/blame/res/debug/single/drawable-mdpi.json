@@ -1,5 +1,9 @@
 [
     {
+        "merged": "E:\\ProjectAndroid\\HospitalQueue\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\setting.png",
+        "source": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\drawable-mdpi\\setting.png"
+    },
+    {
         "merged": "E:\\ProjectAndroid\\HospitalQueue\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\employee_login.png",
         "source": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\drawable-mdpi\\employee_login.png"
     },
