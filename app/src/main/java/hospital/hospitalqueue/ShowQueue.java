@@ -2,6 +2,7 @@ package hospital.hospitalqueue;
 
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -29,7 +30,7 @@ public class ShowQueue extends AppCompatActivity implements Patient.OnDataListen
     private TextView t_patient_queue_present,t_patient_queue_next,t_patient_queue_description_head;
     private TextView t_patient_queue_all_queue,t_patient_present_date;
     private TextView t_patient_queue_number,t_patient_compute_queue;
-
+    private FloatingActionButton f_setting;
     private Button b_cancel_queue;
 
     private LinearLayout l_next_queue;
@@ -64,6 +65,8 @@ public class ShowQueue extends AppCompatActivity implements Patient.OnDataListen
         t_patient_compute_queue = (TextView) findViewById(R.id.t_patient_compute_queue);
         t_patient_sex = (TextView) findViewById(R.id.t_patient_sex);
 
+        f_setting = (FloatingActionButton) findViewById(R.id.f_setting);
+
         b_cancel_queue = (Button) findViewById(R.id.b_cancel_queue);
 
         l_next_queue = (LinearLayout) findViewById(R.id.l_next_queue);
@@ -83,8 +86,28 @@ public class ShowQueue extends AppCompatActivity implements Patient.OnDataListen
         }else {
             patient_id = savePatientData.getPatientId();
             //Log.d("ShowQueue",patient_id);
+            databasePatient.child(patient_id).addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+
+                    patient = dataSnapshot.getValue(Patient.class);
+                    onPassData();
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+
+                }
+            });
 
         }
+
+        f_setting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d("Dd","Setting");
+            }
+        });
 
 
 
@@ -99,28 +122,7 @@ public class ShowQueue extends AppCompatActivity implements Patient.OnDataListen
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.setting) {
-            Log.d("Dd","setting");
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 
     @Override
     protected void onStart() {
