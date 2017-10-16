@@ -4,6 +4,10 @@
         "source": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\drawable-xxhdpi\\setting.png"
     },
     {
+        "merged": "E:\\ProjectAndroid\\HospitalQueue\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\tray.png",
+        "source": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\drawable-xxhdpi\\tray.png"
+    },
+    {
         "merged": "E:\\ProjectAndroid\\HospitalQueue\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\employee_login.png",
         "source": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\drawable-xxhdpi\\employee_login.png"
     },

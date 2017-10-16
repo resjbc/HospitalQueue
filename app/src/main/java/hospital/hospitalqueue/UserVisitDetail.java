@@ -45,6 +45,7 @@ public class UserVisitDetail extends AppCompatActivity {
     DatabaseReference databasePatient;
     DatabaseReference databasePatientQueue;
     private ValueEventListener databasePatientQueue_temp;
+    SavePatientData savePatientData;
 
 
     @Override
@@ -113,6 +114,8 @@ public class UserVisitDetail extends AppCompatActivity {
             }
         });
 
+        savePatientData = new SavePatientData(UserVisitDetail.this);
+
         //Log.d("ShowQueue",getString(R.string.firebase_date_child_present));
 
 
@@ -171,6 +174,10 @@ public class UserVisitDetail extends AppCompatActivity {
             databasePatient.child(patientId).setValue(patient);
             databasePatientQueue.child(getString(R.string.firebase_date_child)).setValue(queueNumber);
 
+            savePatientData.createSetting_Sound(true);
+            savePatientData.createSetting_Vibrator(true);
+            savePatientData.createSetting_Notify(true);
+
 
             Intent intent = new Intent(UserVisitDetail.this,ShowQueue.class);
             Bundle bundle = new Bundle();
@@ -196,19 +203,24 @@ public class UserVisitDetail extends AppCompatActivity {
         ra_group_patient_sex.clearCheck();
     }
 
+
     @Override
     public boolean onSupportNavigateUp() {
-        onBackPressed();
+        //onBackPressed();
+        // return super.onSupportNavigateUp();
         clearFirebaseListenner();
-        return super.onSupportNavigateUp();
+        finish();
+        return true;
     }
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
+        //super.onBackPressed();
         clearFirebaseListenner();
+        moveTaskToBack(true);
 
     }
+
 
     private void clearFirebaseListenner(){
         databasePatientQueue.removeEventListener(databasePatientQueue_temp);

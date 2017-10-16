@@ -22,6 +22,15 @@ public class SavePatientData {
         this.editor = sharedPerfs.edit();
     }
 
+    public void createMyQueue(String patientQueue) {
+        editor.putString("patientQueue", patientQueue);
+        editor.commit();
+    }
+
+    public String getMyQueue() {
+        return sharedPerfs.getString("patientQueue", "0");
+    }
+
     public void createPatientId(String patientId) {
         editor.putString("patientId", patientId);
         editor.commit();
@@ -55,7 +64,7 @@ public class SavePatientData {
     }
 
     public boolean getSetting_Sound() {
-        return sharedPerfs.getBoolean("Sound",true);
+        return sharedPerfs.getBoolean("Sound",false);
     }
 
     public void createSetting_Vibrator(boolean vibrator) {
@@ -64,7 +73,7 @@ public class SavePatientData {
     }
 
     public boolean getSetting_Vibrator() {
-        return sharedPerfs.getBoolean("Vibrator",true);
+        return sharedPerfs.getBoolean("Vibrator",false);
     }
 
     public void createSetting_Notify(boolean notify) {
@@ -73,7 +82,7 @@ public class SavePatientData {
     }
 
     public boolean getSetting_Notifyr() {
-        return sharedPerfs.getBoolean("Notify",true);
+        return sharedPerfs.getBoolean("Notify",false);
     }
 
 

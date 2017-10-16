@@ -20,6 +20,7 @@
     <string name="t_patient_dx">อาการ</string>
     <string name="t_patient_name">ชื่อ</string>
     <string name="t_queue">คิวที่</string>
+    <string name="t_setting">ตั้งค่าการเเจ้งเตือน</string>
     <string name="t_show_f_call">เเจ้งเตือนผู้ป่วย</string>
     <string name="t_status">สถานะ</string>
 </resources>

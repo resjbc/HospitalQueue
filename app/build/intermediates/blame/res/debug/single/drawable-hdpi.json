@@ -10,5 +10,9 @@
     {
         "merged": "E:\\ProjectAndroid\\HospitalQueue\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\setting.png",
         "source": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\drawable-hdpi\\setting.png"
+    },
+    {
+        "merged": "E:\\ProjectAndroid\\HospitalQueue\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\tray.png",
+        "source": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\drawable-hdpi\\tray.png"
     }
 ]

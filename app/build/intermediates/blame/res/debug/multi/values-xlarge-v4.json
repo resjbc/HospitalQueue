@@ -155,14 +155,7 @@
                     "endOffset": 875
                 },
                 "from": {
-                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-xlarge\\strings.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 855,
-                        "endColumn": 44,
-                        "endOffset": 895
-                    }
+                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-xlarge\\strings.xml"
                 }
             },
             {
@@ -254,17 +247,17 @@
                     "startLine": 22,
                     "startColumn": 4,
                     "startOffset": 1241,
-                    "endColumn": 59,
-                    "endOffset": 1296
+                    "endColumn": 58,
+                    "endOffset": 1295
                 },
                 "from": {
                     "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-xlarge\\strings.xml",
                     "position": {
-                        "startLine": 15,
+                        "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 794,
-                        "endColumn": 59,
-                        "endOffset": 849
+                        "startOffset": 901,
+                        "endColumn": 58,
+                        "endOffset": 955
                     }
                 }
             },
@@ -272,9 +265,21 @@
                 "to": {
                     "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 1301,
+                    "startOffset": 1300,
+                    "endColumn": 59,
+                    "endOffset": 1355
+                },
+                "from": {
+                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-xlarge\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1360,
                     "endColumn": 42,
-                    "endOffset": 1339
+                    "endOffset": 1398
                 },
                 "from": {
                     "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-xlarge\\strings.xml"

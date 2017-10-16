@@ -110,6 +110,7 @@ public class EmployeeShowQueue extends AppCompatActivity {
                    databasePatientQueue.child(getString(R.string.firebase_date_child_present)).setValue(patients.get(0).getPatientQueueNumber());
                    if(patients.size() > 1)databasePatientQueue.child(getString(R.string.firebase_date_child_next)).setValue(patients.get(1).getPatientQueueNumber());
                  Toast.makeText(context,getString(R.string.t_show_f_call),Toast.LENGTH_SHORT).show();
+                   databasePatient.child(patients.get(0).getPatientId()).child(getString(R.string.patien_call3)).setValue(getString(R.string.patien_call2));
                }
             }
         });
@@ -126,7 +127,7 @@ public class EmployeeShowQueue extends AppCompatActivity {
             }
         });
 
-
+        StartFirebase();
     }
 
     private void ButtonkQueue() {
@@ -150,7 +151,9 @@ public class EmployeeShowQueue extends AppCompatActivity {
         super.onStart();
         Log.d("Dd","onStart");
         //if(patients.size() != 0) patients.removeAll(patients);
+    }
 
+    private void StartFirebase(){
         databasePatient_temp = databasePatient.orderByChild(getString(R.string.firebase_key)).equalTo(getString(R.string.t_show_queue_patient_status_wait)).limitToFirst(10)
                 .addChildEventListener(new ChildEventListener() {
 
@@ -161,14 +164,18 @@ public class EmployeeShowQueue extends AppCompatActivity {
                         patients.add(dataSnapshot.getValue(Patient.class));
                         patientAdapter.notifyDataSetChanged();
 
-                        if(patients.size() > 2  ) databasePatientQueue.child(getString(R.string.firebase_date_child_next)).setValue(patients.get(1).getPatientQueueNumber());
-                        else if(patients.size() == 1 ) databasePatientQueue.child(getString(R.string.firebase_date_child_next)).setValue(patients.get(0).getPatientQueueNumber());
+                        if(patients.size() > 2  )
+                            databasePatientQueue.child(getString(R.string.firebase_date_child_next)).setValue(patients.get(1).getPatientQueueNumber());
+                        else if(patients.size() == 1 )
+                            databasePatientQueue.child(getString(R.string.firebase_date_child_next)).setValue(patients.get(0).getPatientQueueNumber());
+                        else if(patients.size() == 2 && presentQueueNumber.equals(nextQueueNumber))
+                            databasePatientQueue.child(getString(R.string.firebase_date_child_next)).setValue(patients.get(1).getPatientQueueNumber());
 
 
                         CheckLastItem();
                         ButtonkQueue();
 
-                       //patients.removeAll(patients);
+                        //patients.removeAll(patients);
 
                        /* if (dataSnapshot.exists()) {
 
@@ -199,8 +206,8 @@ public class EmployeeShowQueue extends AppCompatActivity {
 
                         int index = getIndexItem(patient);
 
-                            patients.remove(index);
-                            patientAdapter.notifyItemRemoved(index);
+                        patients.remove(index);
+                        patientAdapter.notifyItemRemoved(index);
 
 
                         patientAdapter.notifyDataSetChanged();
@@ -228,13 +235,13 @@ public class EmployeeShowQueue extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
-               presentQueueNumber =  dataSnapshot.child(getString(R.string.firebase_date_child_present)).getValue().toString();
-               nextQueueNumber =  dataSnapshot.child(getString(R.string.firebase_date_child_next)).getValue().toString();
-               allQueueNumber = dataSnapshot.child(getString(R.string.firebase_date_child_allQueueNumber)).getValue().toString();
-               CancelQueueNumber = dataSnapshot.child(getString(R.string.firebase_date_child_cancel)).getValue().toString();
+                presentQueueNumber =  dataSnapshot.child(getString(R.string.firebase_date_child_present)).getValue().toString();
+                nextQueueNumber =  dataSnapshot.child(getString(R.string.firebase_date_child_next)).getValue().toString();
+                allQueueNumber = dataSnapshot.child(getString(R.string.firebase_date_child_allQueueNumber)).getValue().toString();
+                CancelQueueNumber = dataSnapshot.child(getString(R.string.firebase_date_child_cancel)).getValue().toString();
 
-               // if(allQueueNumber.equals(context.getResources().getString(R.string.t_zero))) fab.setVisibility(View.GONE);
-              //  else fab.setVisibility(View.VISIBLE);
+                // if(allQueueNumber.equals(context.getResources().getString(R.string.t_zero))) fab.setVisibility(View.GONE);
+                //  else fab.setVisibility(View.VISIBLE);
 
 
 
@@ -318,7 +325,12 @@ public class EmployeeShowQueue extends AppCompatActivity {
         switch (item.getItemId()){
             case 0:
                 //if(item.getGroupId() > 0) break;
-
+                if(patients.size() >= 1) {
+                    databasePatientQueue.child(getString(R.string.firebase_date_child_present)).setValue(patients.get(0).getPatientQueueNumber());
+                    if(patients.size() > 1)databasePatientQueue.child(getString(R.string.firebase_date_child_next)).setValue(patients.get(1).getPatientQueueNumber());
+                    Toast.makeText(context,getString(R.string.t_show_f_call),Toast.LENGTH_SHORT).show();
+                    databasePatient.child(patients.get(0).getPatientId()).child(getString(R.string.patien_call3)).setValue(getString(R.string.patien_call2));
+                }
                 break;
             case 1:
                 //Toast.makeText(context,patients.get(item.getGroupId()).getPatientQueueNumber(),Toast.LENGTH_SHORT).show();
@@ -339,8 +351,18 @@ public class EmployeeShowQueue extends AppCompatActivity {
 
     @Override
     public boolean onSupportNavigateUp() {
-        onBackPressed();
-        return super.onSupportNavigateUp();
+        //onBackPressed();
+       // return super.onSupportNavigateUp();
+
+        finish();
+        return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+        moveTaskToBack(true);
+
     }
 
     @Override

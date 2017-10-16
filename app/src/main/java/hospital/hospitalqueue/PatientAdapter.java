@@ -47,14 +47,14 @@ public class PatientAdapter extends RecyclerView.Adapter<PatientAdapter.PatientV
         holder.t_patient_sex_item.setText(context.getString(R.string.t_show_queue_sex)+" "+patient.getPatientSex());
         Log.d("FF","dddsssss"+position);
         if(position == 0 /*&& ((EmployeeShowQueue) context).flagRowCard*/) {
-            holder.ca_queue.setCardBackgroundColor(ContextCompat.getColor(context, R.color.main));
+            holder.ca_queue.setCardBackgroundColor(ContextCompat.getColor(context, R.color.card));
             holder.t_patient_name_item.setTextColor(ContextCompat.getColor(context, R.color.colorAccent4));
             holder.t_patient_dx.setTextColor(ContextCompat.getColor(context, R.color.colorAccent4));
             holder.t_patient_queues_status.setTextColor(ContextCompat.getColor(context, R.color.colorAccent4));
             holder.t_patient_number_item.setTextColor(ContextCompat.getColor(context, R.color.colorAccent4));
             holder.t_patient_sex_item.setTextColor(ContextCompat.getColor(context, R.color.colorAccent4));
         }else {
-            holder.ca_queue.setCardBackgroundColor(ContextCompat.getColor(context, R.color.card));
+            holder.ca_queue.setCardBackgroundColor(ContextCompat.getColor(context, R.color.main));
             holder.t_patient_name_item.setTextColor(ContextCompat.getColor(context, R.color.white));
             holder.t_patient_dx.setTextColor(ContextCompat.getColor(context, R.color.white));
             holder.t_patient_queues_status.setTextColor(ContextCompat.getColor(context, R.color.white));

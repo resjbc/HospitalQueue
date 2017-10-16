@@ -15,4 +15,5 @@
     <string name="d_quation_delete_button_no">ไม่</string>
     <string name="t_show_f_call">เเจ้งเตือนผู้ป่วย</string>
     <string name="patien_call">done</string>
+    <string name="t_setting">ตั้งค่าการเเจ้งเตือน</string>
 </resources>

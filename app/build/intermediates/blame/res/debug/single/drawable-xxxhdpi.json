@@ -10,5 +10,9 @@
     {
         "merged": "E:\\ProjectAndroid\\HospitalQueue\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\employee_login.png",
         "source": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\drawable-xxxhdpi\\employee_login.png"
+    },
+    {
+        "merged": "E:\\ProjectAndroid\\HospitalQueue\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\tray.png",
+        "source": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\drawable-xxxhdpi\\tray.png"
     }
 ]

@@ -3,6 +3,8 @@ package hospital.hospitalqueue;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import com.google.firebase.database.DataSnapshot;
+
 /**
  * Created by IT252 on 24/8/2560.
  */
@@ -21,6 +23,7 @@ public class Patient  implements Parcelable {
     private String patien_call;
 
     private OnDataListener onDataListener = null;
+    private OnDataQueueListener onDataQueueListener = null;
 
     public Patient() {
     }
@@ -157,8 +160,15 @@ public class Patient  implements Parcelable {
         public void onPassData();
     }
 
+    public interface OnDataQueueListener {
+        public void onPassDataQueue(DataSnapshot dataSnapshot);
+    }
+
     public void setOnPassDataListener(OnDataListener listener) {
         onDataListener = listener;
+    }
+    public void setOnPassDataQueueListener(OnDataQueueListener listener) {
+        onDataQueueListener = listener;
     }
 
 }

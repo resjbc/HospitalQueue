@@ -11,6 +11,11 @@
         <item>เแน่นหน้าอก</item>
         <item>อาการอื่นๆ</item>
     </array>
+    <string-array name="setting">
+        <item>สั่น</item>
+        <item>เสียง</item>
+        <item>การเเจ้งเตือน</item>
+    </string-array>
     <attr format="reference" name="constraintSet"/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -161,10 +166,12 @@
     <color name="foreground_material_light">@android:color/black</color>
     <color name="grey1">#ECEFF1</color>
     <color name="grey2">#607D8B</color>
+    <color name="grey3">#455A64</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="main">#00796B</color>
     <color name="main2">#1B5E20</color>
+    <color name="main3">#004D40</color>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>
@@ -796,6 +803,8 @@
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="patien_call">done</string>
+    <string name="patien_call2">call</string>
+    <string name="patien_call3">patien_call</string>
     <string name="r_user_visit_detail_sex_female">หญิง</string>
     <string name="r_user_visit_detail_sex_male">ชาย</string>
     <string name="ra_patient_sex_female">หญิง</string>
@@ -813,6 +822,7 @@
     <string name="t_patient_dx">อาการ</string>
     <string name="t_patient_name">ชื่อ</string>
     <string name="t_queue">คิวที่</string>
+    <string name="t_setting">ตั้งค่าการเเจ้งเตือน</string>
     <string name="t_showAll">กำลังตรวจสอบข้อมูล</string>
     <string name="t_showAll_zero">...</string>
     <string name="t_show_f_call">เเจ้งเตือนผู้ป่วย</string>

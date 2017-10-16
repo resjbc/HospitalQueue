@@ -62,7 +62,16 @@ public class EmployeeLogin extends AppCompatActivity {
 
     @Override
     public boolean onSupportNavigateUp() {
-        onBackPressed();
-        return super.onSupportNavigateUp();
+        //onBackPressed();
+        // return super.onSupportNavigateUp();
+        finish();
+        return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+        moveTaskToBack(true);
+
     }
 }
