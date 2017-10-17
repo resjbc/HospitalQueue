@@ -187,20 +187,27 @@
                     "startLine": 17,
                     "startColumn": 4,
                     "startOffset": 1000,
-                    "endColumn": 59,
-                    "endOffset": 1055
+                    "endColumn": 74,
+                    "endOffset": 1070
                 },
                 "from": {
-                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-large\\strings.xml"
+                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-large\\strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1141,
+                        "endColumn": 74,
+                        "endOffset": 1211
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 1060,
-                    "endColumn": 49,
-                    "endOffset": 1105
+                    "startOffset": 1075,
+                    "endColumn": 71,
+                    "endOffset": 1142
                 },
                 "from": {
                     "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-large\\strings.xml"
@@ -210,9 +217,9 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1110,
+                    "startOffset": 1147,
                     "endColumn": 51,
-                    "endOffset": 1157
+                    "endOffset": 1194
                 },
                 "from": {
                     "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-large\\strings.xml"
@@ -222,9 +229,9 @@
                 "to": {
                     "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 1162,
-                    "endColumn": 46,
-                    "endOffset": 1204
+                    "startOffset": 1199,
+                    "endColumn": 52,
+                    "endOffset": 1247
                 },
                 "from": {
                     "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-large\\strings.xml"
@@ -234,9 +241,9 @@
                 "to": {
                     "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 1209,
-                    "endColumn": 47,
-                    "endOffset": 1252
+                    "startOffset": 1252,
+                    "endColumn": 59,
+                    "endOffset": 1307
                 },
                 "from": {
                     "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-large\\strings.xml"
@@ -246,9 +253,9 @@
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 1257,
-                    "endColumn": 42,
-                    "endOffset": 1295
+                    "startOffset": 1312,
+                    "endColumn": 49,
+                    "endOffset": 1357
                 },
                 "from": {
                     "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-large\\strings.xml"
@@ -258,28 +265,21 @@
                 "to": {
                     "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 1300,
-                    "endColumn": 58,
-                    "endOffset": 1354
+                    "startOffset": 1362,
+                    "endColumn": 51,
+                    "endOffset": 1409
                 },
                 "from": {
-                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-large\\strings.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 901,
-                        "endColumn": 58,
-                        "endOffset": 955
-                    }
+                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-large\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 1359,
-                    "endColumn": 59,
-                    "endOffset": 1414
+                    "startOffset": 1414,
+                    "endColumn": 46,
+                    "endOffset": 1456
                 },
                 "from": {
                     "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-large\\strings.xml"
@@ -289,9 +289,9 @@
                 "to": {
                     "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 1419,
-                    "endColumn": 42,
-                    "endOffset": 1457
+                    "startOffset": 1461,
+                    "endColumn": 47,
+                    "endOffset": 1504
                 },
                 "from": {
                     "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-large\\strings.xml"
@@ -301,9 +301,57 @@
                 "to": {
                     "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 1462,
+                    "startOffset": 1509,
+                    "endColumn": 42,
+                    "endOffset": 1547
+                },
+                "from": {
+                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-large\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 1552,
+                    "endColumn": 58,
+                    "endOffset": 1606
+                },
+                "from": {
+                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-large\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 1611,
+                    "endColumn": 59,
+                    "endOffset": 1666
+                },
+                "from": {
+                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-large\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 1671,
+                    "endColumn": 42,
+                    "endOffset": 1709
+                },
+                "from": {
+                    "file": "E:\\ProjectAndroid\\HospitalQueue\\app\\src\\main\\res\\values-large\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 1714,
                     "endColumn": 103,
-                    "endOffset": 1561
+                    "endOffset": 1813
                 },
                 "from": {
                     "file": "C:\\Users\\Idres\\.android\\build-cache\\14c49d3e4111e689eb33c6b45c81ddf6ed3f9559\\output\\res\\values-large-v4\\values-large-v4.xml"
@@ -311,11 +359,11 @@
             },
             {
                 "to": {
-                    "startLine": 27,
+                    "startLine": 31,
                     "startColumn": 4,
-                    "startOffset": 1566,
+                    "startOffset": 1818,
                     "endColumn": 115,
-                    "endOffset": 1677
+                    "endOffset": 1929
                 },
                 "from": {
                     "file": "C:\\Users\\Idres\\.android\\build-cache\\14c49d3e4111e689eb33c6b45c81ddf6ed3f9559\\output\\res\\values-large-v4\\values-large-v4.xml"

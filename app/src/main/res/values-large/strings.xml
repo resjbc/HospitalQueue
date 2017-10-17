@@ -16,4 +16,8 @@
     <string name="t_show_f_call">เเจ้งเตือนผู้ป่วย</string>
     <string name="patien_call">done</string>
     <string name="t_setting">ตั้งค่าการเเจ้งเตือน</string>
+    <string name="t_confirm_cancel">ต้องการยกเลิกคิวใช่หรือไม่</string>
+    <string name="t_confirm_cancel_no">ไม่</string>
+    <string name="t_confirm_cancel_yes">ใช่</string>
+    <string name="t_checkconnect">ตรวจสอบการเชื่อมต่ออินเตอร์เน็ต</string>
 </resources>

@@ -14,7 +14,7 @@
     <string-array name="setting">
         <item>สั่น</item>
         <item>เสียง</item>
-        <item>การเเจ้งเตือน</item>
+       <!-- <item>การเเจ้งเตือน</item>-->
     </string-array>
     <attr format="reference" name="constraintSet"/>
     <attr format="reference" name="drawerArrowStyle"/>
@@ -813,6 +813,10 @@
     <string name="st_user_visit_detail">wait</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="t_call_patient">เเจ้งเตือนผู้ป่วย</string>
+    <string name="t_checkconnect">ตรวจสอบการเชื่อมต่ออินเตอร์เน็ต</string>
+    <string name="t_confirm_cancel">ต้องการยกเลิกคิวใช่หรือไม่</string>
+    <string name="t_confirm_cancel_no">ไม่</string>
+    <string name="t_confirm_cancel_yes">ใช่</string>
     <string name="t_employee_login_pass">รหัสผ่านผู้ใช้งาน</string>
     <string name="t_employee_login_user">ชื่อผู้ใช้งาน</string>
     <string name="t_end_queue">คิวสุดท้ายของวันนี้</string>

@@ -8,6 +8,10 @@
     <string name="firebase_key">patient_status</string>
     <string name="patien_call">done</string>
     <string name="t_call_patient">เเจ้งเตือนผู้ป่วย</string>
+    <string name="t_checkconnect">ตรวจสอบการเชื่อมต่ออินเตอร์เน็ต</string>
+    <string name="t_confirm_cancel">ต้องการยกเลิกคิวใช่หรือไม่</string>
+    <string name="t_confirm_cancel_no">ไม่</string>
+    <string name="t_confirm_cancel_yes">ใช่</string>
     <string name="t_end_queue">คิวสุดท้ายของวันนี้</string>
     <string name="t_end_queue2">ไม่พบคิว</string>
     <string name="t_option_menu">การจัดการ</string>

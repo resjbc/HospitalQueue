@@ -53,8 +53,10 @@ public class EmployeeLogin extends AppCompatActivity {
                     //Log.d("Dd",getString(R.string.ed_user_pass).toString()+" "+getString(R.string.ed_user_pass).toString());
                 }*/
 
+                if(CheckConnection.checkNet){
                 Intent intent = new Intent(context,EmployeeShowQueue.class);
                 startActivity(intent);
+                }else Toast.makeText(context,getString(R.string.t_checkconnect),Toast.LENGTH_SHORT).show();
             }
         });
 

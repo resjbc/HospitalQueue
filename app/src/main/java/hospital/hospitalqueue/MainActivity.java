@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        CheckConnection.CheckConnectFirebase(MainActivity.this);
     }
 
 }

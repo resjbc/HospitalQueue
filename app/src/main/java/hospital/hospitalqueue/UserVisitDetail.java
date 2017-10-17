@@ -39,11 +39,15 @@ public class UserVisitDetail extends AppCompatActivity {
     private RadioButton ra_patient_sex_male,ra_patient_sex_female;
     private final String clear = null;
     private boolean flagQueueNumber;
+    //private boolean checkNet = false;
     private int queueNumber,queueNext,queuePresent,queueCancel;
     private final  String KEY = "patient";
+    private final String pathcheckNet = ".info/connected";
 
     DatabaseReference databasePatient;
     DatabaseReference databasePatientQueue;
+
+
     private ValueEventListener databasePatientQueue_temp;
     SavePatientData savePatientData;
 
@@ -103,7 +107,9 @@ public class UserVisitDetail extends AppCompatActivity {
         b_reservations_queue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(CheckConnection.checkNet)
                 addQueue();
+                else Toast.makeText(UserVisitDetail.this,getString(R.string.t_checkconnect),Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -116,10 +122,36 @@ public class UserVisitDetail extends AppCompatActivity {
 
         savePatientData = new SavePatientData(UserVisitDetail.this);
 
+        //CheckConnectFirebase();
+
         //Log.d("ShowQueue",getString(R.string.firebase_date_child_present));
 
 
     }
+
+    /*private void CheckConnectFirebase(){
+
+        final DatabaseReference connectedRef = FirebaseDatabase.getInstance().getReference(pathcheckNet);
+        connectedRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                boolean connected = snapshot.getValue(Boolean.class);
+                if (connected) {
+                    checkNet = true;
+                }else {
+                    checkNet = false;
+                    Toast.makeText(UserVisitDetail.this,getString(R.string.t_checkconnect),Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                System.err.println("Listener was cancelled at .info/connected");
+                 checkNet = false;
+                Toast.makeText(UserVisitDetail.this,getString(R.string.t_checkconnect),Toast.LENGTH_SHORT).show();
+            }
+        });
+    }*/
 
 
     @Override

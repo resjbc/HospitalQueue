@@ -136,12 +136,12 @@ public class ShowQueue extends AppCompatActivity implements Patient.OnDataListen
         b_cancel_queue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               if(b_cancel_queue.getText().equals(getString(R.string.b_show_queue_cancel))) {
-                   ClearCancel();
+               if(b_cancel_queue.getText().equals(getString(R.string.b_show_queue_cancel)) && CheckConnection.checkNet) {
+                   ShowDialogConfirmCancel();
                }
                else if(b_cancel_queue.getText().equals(getString(R.string.b_show_queue_finish))) {
                    ClearSuccessAndCancel();
-               }
+               }else if(!CheckConnection.checkNet) Toast.makeText(context,getString(R.string.t_checkconnect),Toast.LENGTH_SHORT).show();
             }
         });
            // Log.d("ShowQueue",patient.getPatient_queue_date()+","+patient.getPatientName());
@@ -263,8 +263,32 @@ public class ShowQueue extends AppCompatActivity implements Patient.OnDataListen
 
         //builder.setNegativeButton("", null);
         builder.create();
+        builder.show();
 
-        // สุดท้ายอย่าลืม show() ด้วย
+    }
+
+    private void ShowDialogConfirmCancel(){
+
+        AlertDialog.Builder builder =
+                new AlertDialog.Builder(ShowQueue.this);
+        //builder.setIcon(android.R.drawable.ic_dialog_info);
+        //builder.setTitle(getString(R.string.t_setting));
+        builder.setMessage(getString(R.string.t_confirm_cancel));
+        builder.setPositiveButton(R.string.t_confirm_cancel_yes, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.dismiss();
+                ClearCancel();
+            }
+        });
+
+        builder.setNegativeButton(R.string.t_confirm_cancel_no, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.dismiss();
+            }
+        });
+        builder.create();
         builder.show();
 
     }
@@ -405,6 +429,7 @@ public class ShowQueue extends AppCompatActivity implements Patient.OnDataListen
     @Override
     protected void onResume() {
         Log.d("Dd","onResume");
+        if(! CheckConnection.checkNet) Toast.makeText(context,getString(R.string.t_checkconnect),Toast.LENGTH_SHORT).show();
        /*try {
            if(patient.getPatient_status().equals(getString(R.string.t_show_queue_patient_status_cancel)) || patient.getPatient_status().equals(getString(R.string.t_show_queue_patient_status_success)))
                ClearSuccessAndCancel();
@@ -429,11 +454,11 @@ public class ShowQueue extends AppCompatActivity implements Patient.OnDataListen
     @Override
     protected void onPause() {
 
-        if(databasePatient_temp!=null){
+        /*if(databasePatient_temp!=null){
             databasePatient.removeEventListener(databasePatient_temp);
             Log.d("Dd","databasePatient_temp");
         }
-        if(databasePatientQueue_temp!=null)  databasePatientQueue.removeEventListener(databasePatientQueue_temp);
+        if(databasePatientQueue_temp!=null)  databasePatientQueue.removeEventListener(databasePatientQueue_temp);*/
         super.onPause();
         Log.d("Dd","onPause");
 

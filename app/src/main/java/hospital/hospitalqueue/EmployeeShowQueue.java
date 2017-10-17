@@ -96,7 +96,8 @@ public class EmployeeShowQueue extends AppCompatActivity {
         f_delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(patients.size() >= 1) {
+                if(!CheckConnection.checkNet) Toast.makeText(context,getString(R.string.t_checkconnect),Toast.LENGTH_SHORT).show();
+                else if(patients.size() >= 1) {
                     ShowDialog();
 
                 }
@@ -106,7 +107,8 @@ public class EmployeeShowQueue extends AppCompatActivity {
         f_call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               if(patients.size() >= 1) {
+                if(!CheckConnection.checkNet) Toast.makeText(context,getString(R.string.t_checkconnect),Toast.LENGTH_SHORT).show();
+                else if(patients.size() >= 1) {
                    databasePatientQueue.child(getString(R.string.firebase_date_child_present)).setValue(patients.get(0).getPatientQueueNumber());
                    if(patients.size() > 1)databasePatientQueue.child(getString(R.string.firebase_date_child_next)).setValue(patients.get(1).getPatientQueueNumber());
                  Toast.makeText(context,getString(R.string.t_show_f_call),Toast.LENGTH_SHORT).show();
@@ -118,7 +120,8 @@ public class EmployeeShowQueue extends AppCompatActivity {
         f_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(patients.size() >= 1){
+                if(!CheckConnection.checkNet) Toast.makeText(context,getString(R.string.t_checkconnect),Toast.LENGTH_SHORT).show();
+                else if(patients.size() >= 1){
                     databasePatient.child(patients.get(0).getPatientId()).child(getString(R.string.firebase_key)).setValue(getString(R.string.t_show_queue_patient_status_success));
                    if(patients.size() > 1) databasePatientQueue.child(getString(R.string.firebase_date_child_present)).setValue(patients.get(1).getPatientQueueNumber());
                    //else databasePatientQueue.child(getString(R.string.firebase_date_child_present)).setValue(patients.get(1).getPatientQueueNumber());
@@ -153,6 +156,17 @@ public class EmployeeShowQueue extends AppCompatActivity {
         //if(patients.size() != 0) patients.removeAll(patients);
     }
 
+    private void CheckNextQueue(){
+        if(patients.size() > 2  )
+            if((Integer.parseInt(presentQueueNumber)< Integer.parseInt(patients.get(0).getPatientQueueNumber())) || (Integer.parseInt(presentQueueNumber)<=0 ))
+                databasePatientQueue.child(getString(R.string.firebase_date_child_next)).setValue(patients.get(0).getPatientQueueNumber());
+            else databasePatientQueue.child(getString(R.string.firebase_date_child_next)).setValue(patients.get(1).getPatientQueueNumber());
+        else if(patients.size() == 1 )
+            databasePatientQueue.child(getString(R.string.firebase_date_child_next)).setValue(patients.get(0).getPatientQueueNumber());
+        else if(patients.size() == 2 && presentQueueNumber.equals(nextQueueNumber))
+            databasePatientQueue.child(getString(R.string.firebase_date_child_next)).setValue(patients.get(1).getPatientQueueNumber());
+    }
+
     private void StartFirebase(){
         databasePatient_temp = databasePatient.orderByChild(getString(R.string.firebase_key)).equalTo(getString(R.string.t_show_queue_patient_status_wait)).limitToFirst(10)
                 .addChildEventListener(new ChildEventListener() {
@@ -160,16 +174,11 @@ public class EmployeeShowQueue extends AppCompatActivity {
                     @Override
                     public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                         Log.d("Dd","onChildAdded");
-
+                        //if(patients.size() > 0) patients.removeAll(patients);
                         patients.add(dataSnapshot.getValue(Patient.class));
                         patientAdapter.notifyDataSetChanged();
 
-                        if(patients.size() > 2  )
-                            databasePatientQueue.child(getString(R.string.firebase_date_child_next)).setValue(patients.get(1).getPatientQueueNumber());
-                        else if(patients.size() == 1 )
-                            databasePatientQueue.child(getString(R.string.firebase_date_child_next)).setValue(patients.get(0).getPatientQueueNumber());
-                        else if(patients.size() == 2 && presentQueueNumber.equals(nextQueueNumber))
-                            databasePatientQueue.child(getString(R.string.firebase_date_child_next)).setValue(patients.get(1).getPatientQueueNumber());
+                        CheckNextQueue();
 
 
                         CheckLastItem();
@@ -211,10 +220,9 @@ public class EmployeeShowQueue extends AppCompatActivity {
 
 
                         patientAdapter.notifyDataSetChanged();
-                        if(patients.size() > 1 ) databasePatientQueue.child(getString(R.string.firebase_date_child_next)).setValue(patients.get(1).getPatientQueueNumber());
-
+                        //if(patients.size() > 1 ) databasePatientQueue.child(getString(R.string.firebase_date_child_next)).setValue(patients.get(1).getPatientQueueNumber());
+                        CheckNextQueue();
                         CheckLastItem();
-
                         ButtonkQueue();
 
 
@@ -235,15 +243,20 @@ public class EmployeeShowQueue extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
-                presentQueueNumber =  dataSnapshot.child(getString(R.string.firebase_date_child_present)).getValue().toString();
-                nextQueueNumber =  dataSnapshot.child(getString(R.string.firebase_date_child_next)).getValue().toString();
-                allQueueNumber = dataSnapshot.child(getString(R.string.firebase_date_child_allQueueNumber)).getValue().toString();
-                CancelQueueNumber = dataSnapshot.child(getString(R.string.firebase_date_child_cancel)).getValue().toString();
+                if(dataSnapshot.exists()) {
 
-                // if(allQueueNumber.equals(context.getResources().getString(R.string.t_zero))) fab.setVisibility(View.GONE);
-                //  else fab.setVisibility(View.VISIBLE);
+                    try {
+                        presentQueueNumber = dataSnapshot.child(getString(R.string.firebase_date_child_present)).getValue().toString();
+                        nextQueueNumber = dataSnapshot.child(getString(R.string.firebase_date_child_next)).getValue().toString();
+                        allQueueNumber = dataSnapshot.child(getString(R.string.firebase_date_child_allQueueNumber)).getValue().toString();
+                        CancelQueueNumber = dataSnapshot.child(getString(R.string.firebase_date_child_cancel)).getValue().toString();
+                    }catch (Exception e){}
 
 
+                    // if(allQueueNumber.equals(context.getResources().getString(R.string.t_zero))) fab.setVisibility(View.GONE);
+                    //  else fab.setVisibility(View.VISIBLE);
+
+                }
 
                 CheckLastItem();
                 ButtonkQueue();
@@ -264,8 +277,11 @@ public class EmployeeShowQueue extends AppCompatActivity {
         builder.setPositiveButton(getString(R.string.d_quation_delete_button_ok), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                databasePatient.child(patients.get(0).getPatientId()).child(getString(R.string.firebase_key)).setValue(getString(R.string.t_show_queue_patient_status_cancel));
-                databasePatientQueue.child(getString(R.string.firebase_date_child_cancel)).setValue((Integer.parseInt(CancelQueueNumber) + 1) + "");
+                if(CheckConnection.checkNet) {
+                    databasePatient.child(patients.get(0).getPatientId()).child(getString(R.string.firebase_key)).setValue(getString(R.string.t_show_queue_patient_status_cancel));
+                    databasePatientQueue.child(getString(R.string.firebase_date_child_cancel)).setValue((Integer.parseInt(CancelQueueNumber) + 1) + "");
+                }
+                else Toast.makeText(context,getString(R.string.t_checkconnect),Toast.LENGTH_SHORT).show();
             }
 
         });
@@ -325,7 +341,8 @@ public class EmployeeShowQueue extends AppCompatActivity {
         switch (item.getItemId()){
             case 0:
                 //if(item.getGroupId() > 0) break;
-                if(patients.size() >= 1) {
+                if(!CheckConnection.checkNet) Toast.makeText(context,getString(R.string.t_checkconnect),Toast.LENGTH_SHORT).show();
+                else  if(patients.size() >= 1) {
                     databasePatientQueue.child(getString(R.string.firebase_date_child_present)).setValue(patients.get(0).getPatientQueueNumber());
                     if(patients.size() > 1)databasePatientQueue.child(getString(R.string.firebase_date_child_next)).setValue(patients.get(1).getPatientQueueNumber());
                     Toast.makeText(context,getString(R.string.t_show_f_call),Toast.LENGTH_SHORT).show();
@@ -334,8 +351,11 @@ public class EmployeeShowQueue extends AppCompatActivity {
                 break;
             case 1:
                 //Toast.makeText(context,patients.get(item.getGroupId()).getPatientQueueNumber(),Toast.LENGTH_SHORT).show();
-                databasePatient.child(patients.get(item.getGroupId()).getPatientId()).child(getString(R.string.firebase_key)).setValue(getString(R.string.t_show_queue_patient_status_cancel));
-                databasePatientQueue.child(getString(R.string.firebase_date_child_cancel)).setValue((Integer.parseInt(CancelQueueNumber)+1)+"");
+                if(!CheckConnection.checkNet) Toast.makeText(context,getString(R.string.t_checkconnect),Toast.LENGTH_SHORT).show();
+               else {
+                    databasePatient.child(patients.get(item.getGroupId()).getPatientId()).child(getString(R.string.firebase_key)).setValue(getString(R.string.t_show_queue_patient_status_cancel));
+                    databasePatientQueue.child(getString(R.string.firebase_date_child_cancel)).setValue((Integer.parseInt(CancelQueueNumber) + 1) + "");
+                }
                 //Log.d("Dd",patients.get(item.getGroupId()).getPatientQueueNumber());
                 break;
         }
@@ -368,7 +388,7 @@ public class EmployeeShowQueue extends AppCompatActivity {
     @Override
     protected void onStop() {
 
-        if(patients.size() > 0) patients.removeAll(patients);
+        //if(patients.size() > 0) patients.removeAll(patients);
 
         super.onStop();
         Log.d("Dd","onStop");
@@ -377,9 +397,9 @@ public class EmployeeShowQueue extends AppCompatActivity {
 
     @Override
     protected void onPause() {
-        if(patients.size() > 0) patients.removeAll(patients);
-       if(databasePatient_temp!=null) databasePatient.removeEventListener(databasePatient_temp);
-        if(databasePatientQueue_temp!=null)  databasePatientQueue.removeEventListener(databasePatientQueue_temp);
+        //if(patients.size() > 0) patients.removeAll(patients);
+       //if(databasePatient_temp!=null) databasePatient.removeEventListener(databasePatient_temp);
+        //if(databasePatientQueue_temp!=null)  databasePatientQueue.removeEventListener(databasePatientQueue_temp);
         super.onPause();
         Log.d("Dd","onPause");
 
@@ -387,8 +407,11 @@ public class EmployeeShowQueue extends AppCompatActivity {
 
     @Override
     protected void onResume() {
-        if(patients.size() > 0) patients.removeAll(patients);
+        //if(patients.size() > 0) patients.removeAll(patients);
+        patientAdapter.notifyDataSetChanged();
+        if(!CheckConnection.checkNet) Toast.makeText(context,getString(R.string.t_checkconnect),Toast.LENGTH_SHORT).show();
         super.onResume();
+
         Log.d("Dd","onResume");
     }
 }
