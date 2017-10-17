@@ -264,7 +264,7 @@ public class ShowQueue extends AppCompatActivity implements Patient.OnDataListen
         //builder.setNegativeButton("", null);
         builder.create();
         builder.show();
-
+//--------------
     }
 
     private void ShowDialogConfirmCancel(){
