@@ -42,21 +42,23 @@ public class EmployeeLogin extends AppCompatActivity {
         b_Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*if(ed_Username.getText().toString().trim().equals(context.getResources().getString(R.string.ed_user_pass)) && ed_Password.getText().toString().trim().equals(context.getResources().getString(R.string.ed_user_pass))){
+
+
+
+                if(ed_Username.getText().toString().trim().equals(context.getResources().getString(R.string.ed_user_pass)) && ed_Password.getText().toString().trim().equals(context.getResources().getString(R.string.ed_user_pass))){
                     //Toast.makeText(EmployeeLogin.this,"OK",Toast.LENGTH_SHORT).show();
                     //Log.d("Dd",ed_Username.getText()+" "+ed_Password.getText());
-                    Intent intent = new Intent(context,EmployeeShowQueue.class);
-                    startActivity(intent);
+                      if(CheckConnection.checkNet){
+                            Intent intent = new Intent(context,EmployeeShowQueue.class);
+                            startActivity(intent);
+                      }else Toast.makeText(context,getString(R.string.t_checkconnect),Toast.LENGTH_SHORT).show();
                 }else {
                     Toast.makeText(EmployeeLogin.this,R.string.warning_login,Toast.LENGTH_SHORT).show();
                     //Log.d("Dd",ed_Username.getText()+" "+ed_Password.getText());
                     //Log.d("Dd",getString(R.string.ed_user_pass).toString()+" "+getString(R.string.ed_user_pass).toString());
-                }*/
+                }
 
-                if(CheckConnection.checkNet){
-                Intent intent = new Intent(context,EmployeeShowQueue.class);
-                startActivity(intent);
-                }else Toast.makeText(context,getString(R.string.t_checkconnect),Toast.LENGTH_SHORT).show();
+
             }
         });
 
