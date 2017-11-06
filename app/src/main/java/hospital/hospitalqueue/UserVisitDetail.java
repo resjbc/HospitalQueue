@@ -34,7 +34,7 @@ public class UserVisitDetail extends AppCompatActivity {
 
     private Spinner sp_dx;
     private Button b_reset,b_reservations_queue;
-    private EditText ed_patient_name,ed_patient_lastname,ed_patient_dx_other;
+    private EditText ed_patient_name,ed_patient_lastname,ed_patient_dx_other,ed_patient_pid;
     private RadioGroup ra_group_patient_sex;
     private RadioButton ra_patient_sex_male,ra_patient_sex_female;
     private final String clear = null;
@@ -76,6 +76,7 @@ public class UserVisitDetail extends AppCompatActivity {
         ed_patient_name = (EditText) findViewById(R.id.ed_patient_name);
         ed_patient_lastname = (EditText) findViewById(R.id.ed_patient_lastname);
         ed_patient_dx_other = (EditText) findViewById(R.id.ed_patient_dx_other);
+        ed_patient_pid = (EditText) findViewById(R.id.ed_patient_pid);
 
         ra_group_patient_sex = (RadioGroup) findViewById(R.id.ra_group_patient_sex);
         ra_patient_sex_female = (RadioButton) findViewById(R.id.ra_patient_sex_female);
@@ -198,10 +199,12 @@ public class UserVisitDetail extends AppCompatActivity {
         String patient_status = getString(R.string.st_user_visit_detail);
         String patien_call = getString(R.string.patien_call);
 
-        if(!TextUtils.isEmpty(patientName) && !TextUtils.isEmpty(patientLastNmae) && !TextUtils.isEmpty(patientDx) && ra_group_patient_sex.getCheckedRadioButtonId() != -1 && !TextUtils.isEmpty(patientDx)){
+        String patientPid = ed_patient_pid.getText().toString();
+
+        if(!TextUtils.isEmpty(patientName) && !TextUtils.isEmpty(patientLastNmae) && !TextUtils.isEmpty(patientDx) && ra_group_patient_sex.getCheckedRadioButtonId() != -1 && !TextUtils.isEmpty(patientDx) && (!TextUtils.isEmpty(patientPid) && patientPid.length() == 13)){
 
             String patientId = databasePatient.push().getKey();
-            Patient patient = new Patient(patientName,patientLastNmae,patientId,patientDx,patientSex,queueNumber,patient_queue_date,patient_status,patien_call);
+            Patient patient = new Patient(patientName,patientLastNmae,patientId,patientDx,patientSex,queueNumber,patient_queue_date,patient_status,patien_call,patientPid);
 
             databasePatient.child(patientId).setValue(patient);
             databasePatientQueue.child(getString(R.string.firebase_date_child)).setValue(queueNumber);

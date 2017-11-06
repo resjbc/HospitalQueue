@@ -45,6 +45,8 @@ public class PatientAdapter extends RecyclerView.Adapter<PatientAdapter.PatientV
         holder.t_patient_queues_status.setText(context.getString(R.string.t_status)+" "+patient.getPatient_status());
         holder.t_patient_number_item.setText(context.getString(R.string.t_queue)+" "+patient.getPatientQueueNumber());
         holder.t_patient_sex_item.setText(context.getString(R.string.t_show_queue_sex)+" "+patient.getPatientSex());
+        holder.t_patient_pid_item.setText(context.getString(R.string.t_user_visit_detail_pid)+" "+patient.getPatien_Pid());
+
         Log.d("FF","dddsssss"+position);
         if(position == 0 /*&& ((EmployeeShowQueue) context).flagRowCard*/) {
             holder.ca_queue.setCardBackgroundColor(ContextCompat.getColor(context, R.color.card));
@@ -53,6 +55,7 @@ public class PatientAdapter extends RecyclerView.Adapter<PatientAdapter.PatientV
             holder.t_patient_queues_status.setTextColor(ContextCompat.getColor(context, R.color.colorAccent4));
             holder.t_patient_number_item.setTextColor(ContextCompat.getColor(context, R.color.colorAccent4));
             holder.t_patient_sex_item.setTextColor(ContextCompat.getColor(context, R.color.colorAccent4));
+            holder.t_patient_pid_item.setTextColor(ContextCompat.getColor(context, R.color.colorAccent4));
         }else {
             holder.ca_queue.setCardBackgroundColor(ContextCompat.getColor(context, R.color.main));
             holder.t_patient_name_item.setTextColor(ContextCompat.getColor(context, R.color.white));
@@ -60,6 +63,7 @@ public class PatientAdapter extends RecyclerView.Adapter<PatientAdapter.PatientV
             holder.t_patient_queues_status.setTextColor(ContextCompat.getColor(context, R.color.white));
             holder.t_patient_number_item.setTextColor(ContextCompat.getColor(context, R.color.white));
             holder.t_patient_sex_item.setTextColor(ContextCompat.getColor(context, R.color.white));
+            holder.t_patient_pid_item.setTextColor(ContextCompat.getColor(context, R.color.white));
         }
 
         holder.itemView.setOnCreateContextMenuListener(new View.OnCreateContextMenuListener() {
@@ -81,7 +85,7 @@ public class PatientAdapter extends RecyclerView.Adapter<PatientAdapter.PatientV
 
      class PatientViewHolder extends RecyclerView.ViewHolder{
 
-         TextView t_patient_name_item,t_patient_dx,t_patient_number_item,t_patient_queues_status,t_patient_sex_item;
+         TextView t_patient_name_item,t_patient_dx,t_patient_number_item,t_patient_queues_status,t_patient_sex_item,t_patient_pid_item;
          CardView ca_queue;
 
          public PatientViewHolder(View itemView) {
@@ -92,6 +96,7 @@ public class PatientAdapter extends RecyclerView.Adapter<PatientAdapter.PatientV
              t_patient_number_item = (TextView) itemView.findViewById(R.id.t_patient_number_item);
              t_patient_queues_status = (TextView) itemView.findViewById(R.id.t_patient_queues_status_item);
              t_patient_sex_item = (TextView) itemView.findViewById(R.id.t_patient_sex_item);
+             t_patient_pid_item = (TextView) itemView.findViewById(R.id.t_patient_pid_item);
              ca_queue = (CardView) itemView.findViewById(R.id.ca_queue);
 
          }

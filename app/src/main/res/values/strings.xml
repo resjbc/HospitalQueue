@@ -105,6 +105,7 @@
     <string name="t_confirm_cancel_no">ไม่</string>
     <string name="t_confirm_cancel_yes">ใช่</string>
     <string name="t_checkconnect">ตรวจสอบการเชื่อมต่ออินเตอร์เน็ต</string>
+    <string name="t_user_visit_detail_pid">หมายเลขบัตรประชาชน</string>
 
     <string-array
         name="setting">

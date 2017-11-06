@@ -366,7 +366,7 @@ public class EmployeeShowQueue extends AppCompatActivity {
 
     private void TestRecycleView(){
         for(int i=0;i<10;i++)
-            patients.add(new Patient("Test","Test","wdwadadsdsdad","ปวดหัว","ชาย",i+"","","wait","done"));
+            patients.add(new Patient("Test","Test","wdwadadsdsdad","ปวดหัว","ชาย",i+"","","wait","done","1234567890123"));
     }
 
     @Override

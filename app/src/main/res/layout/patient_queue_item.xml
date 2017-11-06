@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
 
     android:layout_width="match_parent"
@@ -31,8 +32,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:textSize="@dimen/t_queue_show_dascription"
-                />
+                android:textSize="@dimen/t_queue_show_dascription" />
 
             <TextView
                 android:id="@+id/t_patient_sex_item"
@@ -40,17 +40,23 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/t_patient_name_item"
                 android:textColor="@color/white"
-                android:textSize="@dimen/t_queue_show_dascription"
-                />
+                android:textSize="@dimen/t_queue_show_dascription" />
 
             <TextView
                 android:id="@+id/t_patient_dx_item"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/t_patient_pid_item"
+                android:textColor="@color/white"
+                android:textSize="@dimen/t_queue_show_dascription" />
+
+            <TextView
+                android:id="@+id/t_patient_pid_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_below="@+id/t_patient_sex_item"
                 android:textColor="@color/white"
-                android:textSize="@dimen/t_queue_show_dascription"
-                />
+                android:textSize="@dimen/t_queue_show_dascription" />
 
             <TextView
                 android:id="@+id/t_patient_number_item"
@@ -60,7 +66,7 @@
                 android:layout_alignParentRight="true"
                 android:textColor="@color/white"
                 android:textSize="@dimen/t_queue_show_dascription"
-                />
+                tools:ignore="RelativeOverlap" />
 
             <TextView
                 android:id="@+id/t_patient_queues_status_item"
@@ -70,8 +76,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_below="@+id/t_patient_number_item"
                 android:textColor="@color/white"
-                android:textSize="@dimen/t_queue_show_dascription"
-                />
+                android:textSize="@dimen/t_queue_show_dascription" />
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 

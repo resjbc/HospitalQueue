@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Oct 17 20:15:31 ICT 2017
+#Mon Nov 06 19:22:13 ICT 2017
 210.set=ANDROID_RESOURCE
 282.file=E\:\\ProjectAndroid\\HospitalQueue\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_activity_chooser_view_list_item.xml
 14.set=ANDROID_RESOURCE

@@ -853,6 +853,7 @@
     <string name="t_user_visit_detail_lastname">นามสกุลผู้ป่วย</string>
     <string name="t_user_visit_detail_name">ชื่อผู้ป่วย</string>
     <string name="t_user_visit_detail_other">ระบุอาการอื่นๆ</string>
+    <string name="t_user_visit_detail_pid">หมายเลขบัตรประชาชน</string>
     <string name="t_user_visit_detail_sex">เพศ</string>
     <string name="t_zero">0</string>
     <string name="title_activity_employee_login">สำหรับเจ้าหน้าที่</string>

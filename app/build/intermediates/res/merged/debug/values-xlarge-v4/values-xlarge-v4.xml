@@ -27,4 +27,5 @@
     <string name="t_setting">ตั้งค่าการเเจ้งเตือน</string>
     <string name="t_show_f_call">เเจ้งเตือนผู้ป่วย</string>
     <string name="t_status">สถานะ</string>
+    <string name="t_user_visit_detail_pid">หมายเลขบัตรประชาชน</string>
 </resources>
